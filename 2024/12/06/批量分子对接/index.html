@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>批量分子对接 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="基础知识：比如为何需要pdbqt格式分子对接基础知识 - xiaojikuaipao - 博客园 (cnblogs.com) 安装的指导文件看下面这些 vina的指导文档，必看（提供了好几种安装方式，一种不行换一种，其实操作非常详细了，很多都不一定需要手动调整，直接Linux里面用就行）Installation — Autodock Vina 1.2.0 documentation (autodo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="批量分子对接">
+<meta property="og:url" content="http://example.com/2024/12/06/%E6%89%B9%E9%87%8F%E5%88%86%E5%AD%90%E5%AF%B9%E6%8E%A5/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="基础知识：比如为何需要pdbqt格式分子对接基础知识 - xiaojikuaipao - 博客园 (cnblogs.com) 安装的指导文件看下面这些 vina的指导文档，必看（提供了好几种安装方式，一种不行换一种，其实操作非常详细了，很多都不一定需要手动调整，直接Linux里面用就行）Installation — Autodock Vina 1.2.0 documentation (autodo">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-12-06T02:35:58.000Z">
+<meta property="article:modified_time" content="2024-12-06T02:37:23.392Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="autodock-批量分子对接" class="h-entry article article-type-autodock" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/12/06/%E6%89%B9%E9%87%8F%E5%88%86%E5%AD%90%E5%AF%B9%E6%8E%A5/" class="article-date">
+  <time class="dt-published" datetime="2024-12-06T02:35:58.000Z" itemprop="datePublished">2024-12-06</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      批量分子对接
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>基础知识：比如为何需要pdbqt格式<br>分子对接基础知识 - xiaojikuaipao - 博客园 (cnblogs.com)</p>
+<p>安装的指导文件看下面这些</p>
+<p>vina的指导文档，必看（提供了好几种安装方式，一种不行换一种，其实操作非常详细了，很多都不一定需要手动调整，直接Linux里面用就行）<br>Installation — Autodock Vina 1.2.0 documentation (autodock-vina.readthedocs.io)<br>vina的指导pdf<br><a target="_blank" rel="noopener" href="https://autodock-vina.readthedocs.io/_/downloads/en/latest/pdf/">https://autodock-vina.readthedocs.io/_/downloads/en/latest/pdf/</a></p>
+<p>Open Babel的安装<br>Open Babel的安装与使用 - 云+社区 - 腾讯云 (tencent.com)</p>
+<p>一，蛋白的下载和处理</p>
+<ol>
+<li>PDB文件内容<br>文献搜索，或者网站中找，但老实说它的搜索功能有点奇怪，有时候不同关键词（但是应该指向的是一种东西）不同结果<br>RCSB PDB: Homepage</li>
+</ol>
+<p>2.PDB文件的处理<br>2.1 去除原有小分子ligand+加氢（polar)+导出为pdbqt文件<br>Discover_studio<br>【八分熟肉】【分子对接】使用Discovery_studio进行分子对接前蛋白质预处理_哔哩哔哩_bilibili</p>
+<p>或者pymol 处理</p>
+<p>还要安装windows版本的MGLtools，主要是为了导出pdbqt文件，操作如下</p>
+<p>image.png<br>3.对接的口袋哪里找<br>用这个网站预测，然后下载活性区域<br>Zentrum für Bioinformatik: Universität Hamburg - Proteins Plus Server</p>
+<p>4.使用autodocktools进行活性口袋的预测,得到配置文件config.txt<br>receptor&#x3D;<br>ligand&#x3D;</p>
+<p>center_x&#x3D;100.657<br>center_y&#x3D;6.351<br>center_z&#x3D;40.898</p>
+<p>size_x&#x3D;46<br>size_y&#x3D;34<br>size_z&#x3D;28</p>
+<p>exhaustiveness&#x3D;16<br>num_modes&#x3D;9<br>energy_range&#x3D;4</p>
+<p>二，软件的安装<br>vina 和openbabel的安装<br>2.11 vina的conda和pip安装<br>这里注意要是python3.7的环境，因为最新版本已经到10了，所以如果直接安装python3的话，会装到python3.10，会有报错</p>
+<p>conda create -n vina2 python&#x3D;3.7<br>conda activate vina2<br>pip install -U numpy vina<br>但是奇葩的是虽然安装上，但是输入vina是没有办法调用的，不知道什么原因，但是好在官网提供了其他方式，直接下载即可用<br>Installation — Autodock Vina 1.2.0 documentation (autodock-vina.readthedocs.io)</p>
+<p>2.12 vina的直接使用<br>Releases · ccsb-scripps&#x2F;AutoDock-Vina (github.com)</p>
+<p>注意要给权限</p>
+<p>chmod 755 vina_1.2.3_linux_x86_64<br>调用出结果即可</p>
+<p>.&#x2F;vina_1.2.0_linux_x86_64 –help</p>
+<h2 id="或者使用绝对路径"><a href="#或者使用绝对路径" class="headerlink" title="或者使用绝对路径"></a>或者使用绝对路径</h2><p>2.13 官网下载vina(最佳方式，推荐）<br>使用了半天才发现，官网这个下载才是最佳的，Linux下载解压之后，里面还有一个叫vina_split的脚本，这个很重要，因为如果你从zinc上下载的是pdbqt格式的话，下载的pbdqt格式是一个整体，需要用这个软件去分割<br>Download AutoDock4 – AutoDock (scripps.edu)</p>
+<p>2.13 openbabel<br>用来解压mol文件，因为我们从zinc数据库下载的是一个mol2的压缩文件，要用这个进行解压</p>
+<p>conda install -y openbabel  ## 用来解压mol文件<br>###常用分子格式转换命令，和上下文其实关系不大，属于后来补充的一些操作方法<br>mol2格式转pdbqt格式：<br>obabel -imol2 ligand.mol2 -opdbqt -O ligand.pdbqt</p>
+<p>pdb格式转mol2格式：<br>obabel -ipdb ligand.pdb -omol2 ligand.mol2</p>
+<p>smiles格式转2D的sdf格式：<br>obabel ligands.smi -O ligands.sdf –gen2d</p>
+<p>smiles格式转3D的sdf格式：<br>obabel ligands.smi -O ligands.sdf –gen3d</p>
+<p>sdf格式转smiles格式，删除氢：<br>obabel ligands.sdf -osmi -O ligands.smi -d</p>
+<p>sdf格式转smiles格式，添加氢：<br>obabel ligands.sdf -O ligands.smi -h<br>2.2 MGLTools的安装<br>用来将mol2转换为pdbqt文件，注意看下面的这个教程的操作</p>
+<p>直接下载，然后解压即可，需要用到其中的prepare_ligand4.py</p>
+<p>Downloads – mgltools (scripps.edu)</p>
+<p>Linux上安装MGLtools - 知乎 (zhihu.com)</p>
+<p>bash $MGL_ROOT&#x2F;install.sh</p>
+<p>!后面会出现install.sh后面会出现几个alias，要将其放入.bashrc，还要source一下</p>
+<p>这个软件因为是python2写的，所以注意需要用到python2的环境,所以按照上面的教程设置2也行，或者直接创建conda的python2的环境</p>
+<p> conda create -n vina3 python&#x3D;2.7<br>三， zinc小分子数据库的下载<br>如何从ZINC数库（<a target="_blank" rel="noopener" href="http://www.zinc15.docking.org)下载虚拟筛选化合物库/">www.zinc15.docking.org）下载虚拟筛选化合物库</a> - 知乎 (zhihu.com)</p>
+<p>按照第一个视频上面的操作就好，我们下载的是mol2格式，通过fda认证的小分子药物<br>ZINC (docking.org)</p>
+<p>四.基础操作<br>4.1 obabel解压缩<br>首先我们下载的是一个fda.mol2文件，这是个大的压缩文件,要使用obabel 进行解压缩成若干个小的mol2文件</p>
+<p>obabel -i mol2 fda.mol2 -o mol2 -O fda.mol2 -m<br>注：其实看上面就知道其实不需要prepare这个obabel 也可以将mol2转换为pdbqt</p>
+<p>4.2 使用MGLTools中的小工具循环将mol2文件转换为pdbqt文件<br> for i in *mol2;do echo $i; pythonsh ~&#x2F;Biosfot&#x2F;mgltools_x86_64Linux2_1.5.6&#x2F;MGLToolsPckgs&#x2F;AutoDockTools&#x2F;Utilities24&#x2F;prepare_ligand4.py  -l $i $i.pdbqt ;done</p>
+<p>4.3 进行分子对接<br>因为我使用的是不需要安装的vina，也就是GitHub下载的版本，这个版本又和视频之中的不一样，会少了一个log选项，所以你如果是按照视频之中的安装，那么分子对接的命令和我是不一致的,help一下命令，看看参数</p>
+<p>AutoDock Vina v1.2.3</p>
+<p>Input:<br>  –receptor arg             rigid part of the receptor (PDBQT)<br>  –flex arg                 flexible side chains, if any (PDBQT)<br>  –ligand arg               ligand (PDBQT)<br>  –batch arg                batch ligand (PDBQT)<br>  –scoring arg (&#x3D;vina)      scoring function (ad4, vina or vinardo)</p>
+<p>Search space (required):<br>  –maps arg                 affinity maps for the autodock4.2 (ad4) or vina<br>                             scoring function<br>  –center_x arg             X coordinate of the center (Angstrom)<br>  –center_y arg             Y coordinate of the center (Angstrom)<br>  –center_z arg             Z coordinate of the center (Angstrom)<br>  –size_x arg               size in the X dimension (Angstrom)<br>  –size_y arg               size in the Y dimension (Angstrom)<br>  –size_z arg               size in the Z dimension (Angstrom)<br>  –autobox                  set maps dimensions based on input ligand(s) (for<br>                             –score_only and –local_only)</p>
+<p>Output (optional):<br>  –out arg                  output models (PDBQT), the default is chosen based<br>                             on the ligand file name<br>  –dir arg                  output directory for batch mode<br>  –write_maps arg           output filename (directory + prefix name) for<br>                             maps. Option –force_even_voxels may be needed to<br>                             comply with .map format</p>
+<p>Misc (optional):<br>  –cpu arg (&#x3D;0)             the number of CPUs to use (the default is to try<br>                             to detect the number of CPUs or, failing that, use<br>                             1)<br>  –seed arg (&#x3D;0)            explicit random seed<br>  –exhaustiveness arg (&#x3D;8)  exhaustiveness of the global search (roughly<br>                             proportional to time): 1+<br>  –max_evals arg (&#x3D;0)       number of evaluations in each MC run (if zero,<br>                             which is the default, the number of MC steps is<br>                             based on heuristics)<br>  –num_modes arg (&#x3D;9)       maximum number of binding modes to generate<br>  –min_rmsd arg (&#x3D;1)        minimum RMSD between output poses<br>  –energy_range arg (&#x3D;3)    maximum energy difference between the best binding<br>                             mode and the worst one displayed (kcal&#x2F;mol)<br>  –spacing arg (&#x3D;0.375)     grid spacing (Angstrom)<br>  –verbosity arg (&#x3D;1)       verbosity (0&#x3D;no output, 1&#x3D;normal, 2&#x3D;verbose)</p>
+<p>Configuration file (optional):<br>  –config arg               the above options can be put here</p>
+<p>Information (optional):<br>  –help                     display usage summary<br>  –help_advanced            display usage summary with advanced options<br>  –version                  display program version</p>
+<p>先简单测试一波一个分子能不能操作</p>
+<p>.&#x2F;vina_1.2.3_linux_x86_64 –config config.txt –ligand fda666.pdbqt –out test&#x2F;666.pdbqt<br>可以，那么循环操作就可以了</p>
+<p>for i in *pdbqt;do .&#x2F;vina_1.2.3_linux_x86_64 –config config.txt –ligand $i –out test&#x2F;$i.log ;done<br>不过很明显从参数来看vina 1.2版本以上是内置了使用cpu并行运算的，一次搞n个分子</p>
+<p>但直接使用Linux和python的并行操作也可以</p>
+<p>补充：vina可以在python中使用的脚本<br>Python scripting — Autodock Vina 1.2.0 documentation (autodock-vina.readthedocs.io)</p>
+<p>#! &#x2F;usr&#x2F;bin&#x2F;env python</p>
+<h1 id="coding-utf-8"><a href="#coding-utf-8" class="headerlink" title="-- coding: utf-8 --"></a>-<em>- coding: utf-8 -</em>-</h1><h1 id=""><a href="#" class="headerlink" title=""></a></h1><h1 id="My-first-example-with-AutoDock-Vina-in-python"><a href="#My-first-example-with-AutoDock-Vina-in-python" class="headerlink" title="My first example with AutoDock Vina in python"></a>My first example with AutoDock Vina in python</h1><h1 id="-1"><a href="#-1" class="headerlink" title=""></a></h1><p>from vina import Vina</p>
+<p>v &#x3D; Vina(sf_name&#x3D;’vina’)</p>
+<p>v.set_receptor(‘1iep_receptor.pdbqt’)</p>
+<p>v.set_ligand_from_file(‘1iep_ligand.pdbqt’)<br>v.compute_vina_maps(center&#x3D;[15.190, 53.903, 16.917], box_size&#x3D;[20, 20, 20])</p>
+<h1 id="Score-the-current-pose"><a href="#Score-the-current-pose" class="headerlink" title="Score the current pose"></a>Score the current pose</h1><p>energy &#x3D; v.score()<br>print(‘Score before minimization: %.3f (kcal&#x2F;mol)’ % energy[0])</p>
+<h1 id="Minimized-locally-the-current-pose"><a href="#Minimized-locally-the-current-pose" class="headerlink" title="Minimized locally the current pose"></a>Minimized locally the current pose</h1><p>energy_minimized &#x3D; v.optimize()<br>print(‘Score after minimization : %.3f (kcal&#x2F;mol)’ % energy_minimized[0])<br>v.write_pose(‘1iep_ligand_minimized.pdbqt’, overwrite&#x3D;True)</p>
+<h1 id="Dock-the-ligand"><a href="#Dock-the-ligand" class="headerlink" title="Dock the ligand"></a>Dock the ligand</h1><p>v.dock(exhaustiveness&#x3D;32, n_poses&#x3D;20)<br>v.write_poses(‘1iep_ligand_vina_out.pdbqt’, n_poses&#x3D;5, overwrite&#x3D;True)<br>之后还有分子动力学模拟，之前看过一篇文献叫Beware of docking!<br>，大概意思就是docking只能提供一个切面，分子动力学模拟比较可靠一点。所以如果想要深入的话，可以以分子对接作为筛选，筛选前面几个分子然后去做分子动力学模拟。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/12/06/%E6%89%B9%E9%87%8F%E5%88%86%E5%AD%90%E5%AF%B9%E6%8E%A5/" data-id="cm4c4y9ae0000wc344bzqfqmz" data-title="批量分子对接" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2024/11/27/%E5%A4%9A%E4%B8%AAGSE%E6%95%B0%E6%8D%AE%E9%9B%86%E7%9B%B8%E4%BA%92%E5%8D%B0%E8%AF%81%E7%9A%84%E5%88%86%E6%9E%90%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5%E7%99%8C%E7%97%87%E7%9B%B8%E5%85%B3%E5%9F%BA%E5%9B%A0%E8%A1%A8%E8%BE%BE%E4%B8%BA%E4%BE%8B%EF%BC%89/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">多个GSE数据集相互印证的分析教程（以癌症相关基因表达为例）</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/12/">December 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/11/">November 2024</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2024/12/06/%E6%89%B9%E9%87%8F%E5%88%86%E5%AD%90%E5%AF%B9%E6%8E%A5/">批量分子对接</a>
+          </li>
+        
+          <li>
+            <a href="/2024/11/27/%E5%A4%9A%E4%B8%AAGSE%E6%95%B0%E6%8D%AE%E9%9B%86%E7%9B%B8%E4%BA%92%E5%8D%B0%E8%AF%81%E7%9A%84%E5%88%86%E6%9E%90%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5%E7%99%8C%E7%97%87%E7%9B%B8%E5%85%B3%E5%9F%BA%E5%9B%A0%E8%A1%A8%E8%BE%BE%E4%B8%BA%E4%BE%8B%EF%BC%89/">多个GSE数据集相互印证的分析教程（以癌症相关基因表达为例）</a>
+          </li>
+        
+          <li>
+            <a href="/2024/11/27/GSE%E6%95%B0%E6%8D%AE%E4%B8%8B%E8%BD%BD%E3%80%81%E6%B3%A8%E9%87%8A%E3%80%81%E5%B7%AE%E5%BC%82%E5%9F%BA%E5%9B%A0%E5%88%86%E6%9E%90%E3%80%81GO%E5%AF%8C%E9%9B%86%E5%88%86%E6%9E%90%E4%B8%8EGSEA%E5%AF%8C%E9%9B%86%E5%88%86%E6%9E%90%E6%95%99%E7%A8%8B/">GSE数据下载、注释、差异基因分析、GO富集分析与GSEA富集分析教程</a>
+          </li>
+        
+          <li>
+            <a href="/2024/11/27/%E7%94%9F%E4%BF%A1%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B%EF%BC%9AR%E3%80%81Rstudio%E3%80%81Python%E3%80%81VsCode%E5%8F%8A%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/">生信环境搭建教程：R、Rstudio、Python、VsCode及相关配置</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2024 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
