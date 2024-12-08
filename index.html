@@ -69,6 +69,52 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-本地部署Grok2-0" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/12/08/%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2Grok2-0/" class="article-date">
+  <time class="dt-published" datetime="2024-12-08T15:11:33.000Z" itemprop="datePublished">2024-12-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/12/08/%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2Grok2-0/">本地部署Grok2.0</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="1、注册登录"><a href="#1、注册登录" class="headerlink" title="1、注册登录"></a>1、注册登录</h2><p>官方地址<a target="_blank" rel="noopener" href="https://x.ai/">https://x.ai/</a><br><img src="/image-1.png" alt="xai网页截图"></p>
+<h2 id="2、创建API密钥"><a href="#2、创建API密钥" class="headerlink" title="2、创建API密钥"></a>2、创建API密钥</h2><p>地址<a target="_blank" rel="noopener" href="https://console.x.ai/">https://console.x.ai/</a><br><img src="/image-2.png" alt="API密钥"></p>
+<h2 id="3、打开chatBox的github页面"><a href="#3、打开chatBox的github页面" class="headerlink" title="3、打开chatBox的github页面"></a>3、打开chatBox的github页面</h2><p><a target="_blank" rel="noopener" href="https://github.com/Bin-Huang/chatbox">https://github.com/Bin-Huang/chatbox</a><br><img src="/image-3.png" alt="alt text"></p>
+<h2 id="4、下载并安装chatBox"><a href="#4、下载并安装chatBox" class="headerlink" title="4、下载并安装chatBox"></a>4、下载并安装chatBox</h2><p><img src="/image-4.png" alt="alt text"></p>
+<h2 id="5、打开chatBox"><a href="#5、打开chatBox" class="headerlink" title="5、打开chatBox"></a>5、打开chatBox</h2><p><img src="/image-5.png" alt="alt text"></p>
+<h2 id="6、打开设置-模型-模型提供方-自定义提供模型"><a href="#6、打开设置-模型-模型提供方-自定义提供模型" class="headerlink" title="6、打开设置 模型-&gt;模型提供方-&gt;自定义提供模型"></a>6、打开设置 模型-&gt;模型提供方-&gt;自定义提供模型</h2><p><img src="/image-6.png" alt="alt text"><br>配置：<br>模型提供方: grok-beta<br>API模式: OpenAI API兼容<br>名称: grok-beta (必须和模型提供方一致)<br>API域名: <a target="_blank" rel="noopener" href="https://api.x.ai/">https://api.x.ai</a><br>API路径: &#x2F;v1&#x2F;chat&#x2F;completions<br>API密钥: 第2步的密钥复制过来即可<br>模型: grok-beta</p>
+<p><img src="/image-7.png" alt="alt text"></p>
+<h2 id="7、使用"><a href="#7、使用" class="headerlink" title="7、使用"></a>7、使用</h2><p>创建新对话即可默认使用grok-beta模型<br><img src="/image-8.png" alt="alt text"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/12/08/%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2Grok2-0/" data-id="cm4fr1eb20000xk34atnpfkqr" data-title="本地部署Grok2.0" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="autodock-批量分子对接" class="h-entry article article-type-autodock" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2024/12/06/%E6%89%B9%E9%87%8F%E5%88%86%E5%AD%90%E5%AF%B9%E6%8E%A5/" class="article-date">
@@ -259,7 +305,8 @@
       
         <h1 id="GSE数据下载、差异基因分析、GO富集分析与GSEA分析教程"><a href="#GSE数据下载、差异基因分析、GO富集分析与GSEA分析教程" class="headerlink" title="GSE数据下载、差异基因分析、GO富集分析与GSEA分析教程"></a>GSE数据下载、差异基因分析、GO富集分析与GSEA分析教程</h1><h2 id="一、安装必要的R包"><a href="#一、安装必要的R包" class="headerlink" title="一、安装必要的R包"></a>一、安装必要的R包</h2><ol>
 <li>确保已安装<code>BiocManager</code>。如果未安装，在R控制台中输入以下命令进行安装：<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="punctuation">(</span><span class="operator">!</span>requireNamespace<span class="punctuation">(</span><span class="string">&quot;BiocManager&quot;</span><span class="punctuation">,</span> quietly <span class="operator">=</span> <span class="literal">TRUE</span><span class="punctuation">)</span><span class="punctuation">)</span></span><br><span class="line">    install.packages<span class="punctuation">(</span><span class="string">&quot;BiocManager&quot;</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure></li>
-<li>安装<code>geoquery</code>包以及其他用于数据分析的包（如<code>limma</code>用于差异基因分析，<code>clusterProfiler</code>用于GO富集分析和GSEA分析等）：<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">BiocManager<span class="operator">::</span>install<span class="punctuation">(</span><span class="built_in">c</span><span class="punctuation">(</span><span class="string">&quot;geoquery&quot;</span><span class="punctuation">,</span> <span class="string">&quot;limma&quot;</span><span class="punctuation">,</span> <span class="string">&quot;clusterProfiler&quot;</span><span class="punctuation">,</span> <span class="string">&quot;org.Hs.eg.db&quot;</span><span class="punctuation">)</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure></li>
+<li>安装<code>geoquery</code>包以及其他用于数据分析的包（如<code>limma</code>用于差异基因分析，<code>clusterProfiler</code>用于GO富集分析和GSEA分析等）：<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">BiocManager<span class="operator">::</span>install<span class="punctuation">(</span><span class="built_in">c</span><span class="punctuation">(</span><span class="string">&quot;geoquery&quot;</span><span class="punctuation">,</span> <span class="string">&quot;limma&quot;</span><span class="punctuation">,</span> <span class="string">&quot;clusterProfiler&quot;</span><span class="punctuation">,</span> <span class="string">&quot;org.Hs.eg.db&quot;</span><span class="punctuation">)</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
+<img src="/image.png" alt="alt text"></li>
 </ol>
 <h2 id="二、使用geoquery下载GSE数据"><a href="#二、使用geoquery下载GSE数据" class="headerlink" title="二、使用geoquery下载GSE数据"></a>二、使用<code>geoquery</code>下载GSE数据</h2><ol>
 <li>加载<code>geoquery</code>包：<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">library<span class="punctuation">(</span>geoquery<span class="punctuation">)</span></span><br></pre></td></tr></table></figure></li>
@@ -371,6 +418,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2024/12/08/%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2Grok2-0/">本地部署Grok2.0</a>
+          </li>
         
           <li>
             <a href="/2024/12/06/%E6%89%B9%E9%87%8F%E5%88%86%E5%AD%90%E5%AF%B9%E6%8E%A5/">批量分子对接</a>
