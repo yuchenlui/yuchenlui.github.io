@@ -1,548 +1,431 @@
 
+
+
+
 <!DOCTYPE html>
-<html lang="chinese">
+<html lang="zh-CN">
 <head>
-    <meta charset="utf-8" />
-    <title>小路Episteme</title>
-    <meta name="author" content="小路" />
-    <meta name="description" content="欢迎关注我，我的公众号是 医嘉SCI，b站和油管频道都是 小路Episteme" />
-    <meta name="keywords" content="生信" />
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
-    />
-    <link rel="icon" href="/images/avatar.jpg" />
-    <link rel="preconnect" href="https://s4.zstatic.net" />
-<script src="https://s4.zstatic.net/ajax/libs/vue/3.3.7/vue.global.prod.min.js"></script>
-<link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-<link rel="preconnect" href="https://fonts.googleapis.cn" />
-<link rel="preconnect" href="https://fonts.gstatic.cn" crossorigin />
-<link
-    rel="stylesheet"
-    href="https://fonts.googleapis.cn/css2?family=Fira+Code:wght@400;500;600;700&family=Lexend:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;600;700;800;900&display=swap"
-/>
-<script> const mixins = {}; </script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
-<script src="https://polyfill.alicdn.com/v3/polyfill.min.js?features=default"></script>
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
 
 
-<script src="https://s4.zstatic.net/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-<script src="https://s4.zstatic.net/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
-<link
-    rel="stylesheet"
-    href="https://s4.zstatic.net/ajax/libs/highlight.js/11.9.0/styles/github.min.css"
-/>
-<script src="/js/lib/highlight.js"></script>
+<link rel="alternate" type="application/rss+xml" title="小路Episteme" href="https://yuchenlui.github.io/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="小路Episteme" href="https://yuchenlui.github.io/atom.xml" />
+<link rel="alternate" type="application/json" title="小路Episteme" href="https://yuchenlui.github.io/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+
+<link rel="canonical" href="https://yuchenlui.github.io/">
 
 
 
-<script src="/js/lib/preview.js"></script>
-
-
-
-
-
-<script src="/js/lib/home.js"></script>
-
-<link rel="stylesheet" href="/css/main.css" />
-
+  <title>Yume Shoka = 小路Episteme = 知识是通向自由的阶梯</title>
 <meta name="generator" content="Hexo 7.3.0"></head>
-<body>
-    <div id="layout">
-        <transition name="fade">
-            <div id="loading" v-show="loading">
-                <div id="loading-circle">
-                    <h2>LOADING</h2>
-                    <p>加载过慢请开启缓存 浏览器默认开启</p>
-                    <img src="/images/loading.gif" />
-                </div>
-            </div>
-        </transition>
-        <div id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor}">
-    <nav id="desktop-menu">
-        <a class="title" href="/">
-            <span>小路EPISTEME</span>
-        </a>
-        
-        <a href="/">
-            <i class="fa-solid fa-house fa-fw"></i>
-            <span>&ensp;Home</span>
-        </a>
-        
-        <a href="/about">
-            <i class="fa-solid fa-id-card fa-fw"></i>
-            <span>&ensp;About</span>
-        </a>
-        
-        <a href="/archives">
-            <i class="fa-solid fa-box-archive fa-fw"></i>
-            <span>&ensp;Archives</span>
-        </a>
-        
-        <a href="/categories">
-            <i class="fa-solid fa-bookmark fa-fw"></i>
-            <span>&ensp;Categories</span>
-        </a>
-        
-        <a href="/tags">
-            <i class="fa-solid fa-tags fa-fw"></i>
-            <span>&ensp;Tags</span>
-        </a>
-        
-    </nav>
-    <nav id="mobile-menu">
-        <div class="title" @click="showMenuItems = !showMenuItems">
-            <i class="fa-solid fa-bars fa-fw"></i>
-            <span>&emsp;小路EPISTEME</span>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+            <a href="/" class="logo" rel="start"><p class="artboard">Yume Shoka</p>
+              <h1 itemprop="name headline" class="title">小路Episteme</h1>
+            </a>
+            <p class="meta" itemprop="description">= 知识是通向自由的阶梯 =</p>
+          
+          </div>
         </div>
-        <transition name="slide">
-            <div class="items" v-show="showMenuItems">
-                
-                <a href="/">
-                    <div class="item">
-                        <div style="min-width: 20px; max-width: 50px; width: 10%">
-                            <i class="fa-solid fa-house fa-fw"></i>
-                        </div>
-                        <div style="min-width: 100px; max-width: 150%; width: 20%">Home</div>
-                    </div>
-                </a>
-                
-                <a href="/about">
-                    <div class="item">
-                        <div style="min-width: 20px; max-width: 50px; width: 10%">
-                            <i class="fa-solid fa-id-card fa-fw"></i>
-                        </div>
-                        <div style="min-width: 100px; max-width: 150%; width: 20%">About</div>
-                    </div>
-                </a>
-                
-                <a href="/archives">
-                    <div class="item">
-                        <div style="min-width: 20px; max-width: 50px; width: 10%">
-                            <i class="fa-solid fa-box-archive fa-fw"></i>
-                        </div>
-                        <div style="min-width: 100px; max-width: 150%; width: 20%">Archives</div>
-                    </div>
-                </a>
-                
-                <a href="/categories">
-                    <div class="item">
-                        <div style="min-width: 20px; max-width: 50px; width: 10%">
-                            <i class="fa-solid fa-bookmark fa-fw"></i>
-                        </div>
-                        <div style="min-width: 100px; max-width: 150%; width: 20%">Categories</div>
-                    </div>
-                </a>
-                
-                <a href="/tags">
-                    <div class="item">
-                        <div style="min-width: 20px; max-width: 50px; width: 10%">
-                            <i class="fa-solid fa-tags fa-fw"></i>
-                        </div>
-                        <div style="min-width: 100px; max-width: 150%; width: 20%">Tags</div>
-                    </div>
-                </a>
-                
-            </div>
-        </transition>
-    </nav>
-</div>
-<transition name="fade">
-    <div id="menu-curtain" @click="showMenuItems = !showMenuItems" v-show="showMenuItems"></div>
-</transition>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">Yume Shoka</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
 
-        <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-            <div id="home-head">
-    <div
-        id="home-background"
-        ref="homeBackground"
-        data-images="/images/background.jpg"
-    ></div>
-    <div id="home-info" @click="homeClick">
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="info">
-            <div class="wrap">
-                <h1>小路Episteme</h1>
-                <h3>知识是通向自由的阶梯</h3>
-                <h5>欢迎关注我，我的公众号是 医嘉SCI，b站和油管频道都是 小路Episteme</h5>
-            </div>
-        </span>
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giciuv0socj20zk0m8qes.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipetv6p75j20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclfb3vzhj20zk0m8wny.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giciryrr3rj20zk0m8nhk.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipeuibk9fj20zk0m8ay2.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclil3m4ej20zk0m8tn8.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
     </div>
-</div>
-<div
-    id="home-posts-wrap"
-    ref="homePostsWrap"
-    true
->
-    <div id="home-posts">
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="index wrap">
+    <h2 class="divider">文章列表</h2>
+    <div class="segments posts">
         
-
-<div class="post">
-    <a href="/2024/12/08/Grok--%E9%AB%98%E6%95%88%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C%E5%BF%85%E5%A4%87/">
-        <h2 class="post-title">Grok--高效论文写作必备</h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2024/12/8
-        </span>
-        
-        
-    </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <h2 id="1、注册登录"><a href="#1、注册登录" class="headerlink" title="1、注册登录"></a>1、注册登录</h2><p>官方地址<a target="_blank" rel="noopener" href="https://x.ai/">https://x.ai/</a><br><img src="https://raw.githubusercontent.com/yuchenlui/picture/main/images/20250331_095529.png" alt="xai网页截图"></p>
-<h2 id="2、创建API密钥"><a href="#2、创建API密钥" class="headerlink" title="2、创建API密钥"></a>2、创建API密钥</h2><p>地址<a target="_blank" rel="noopener" href="https://console.x.ai/">https://console.x.ai/</a><br><img src="https://raw.githubusercontent.com/yuchenlui/picture/main/images/20250331_095813.png" alt="API密钥"></p>
-<h2 id="3、打开chatBox的github页面"><a href="#3、打开chatBox的github页面" class="headerlink" title="3、打开chatBox的github页面"></a>3、打开chatBox的github页面</h2><p><a target="_blank" rel="noopener" href="https://github.com/Bin-Huang/chatbox">https://github.com/Bin-Huang/chatbox</a><br><img src="/image-3.png" alt="alt text"></p>
-<h2 id="4、下载并安装chatBox"><a href="#4、下载并安装chatBox" class="headerlink" title="4、下载并安装chatBox"></a>4、下载并安装chatBox</h2><p><img src="/image-4.png" alt="alt text"></p>
-<h2 id="5、打开chatBox"><a href="#5、打开chatBox" class="headerlink" title="5、打开chatBox"></a>5、打开chatBox</h2><p><img src="/image-5.png" alt="alt text"></p>
-<h2 id="6、打开设置-模型-模型提供方-自定义提供模型"><a href="#6、打开设置-模型-模型提供方-自定义提供模型" class="headerlink" title="6、打开设置 模型-&gt;模型提供方-&gt;自定义提供模型"></a>6、打开设置 模型-&gt;模型提供方-&gt;自定义提供模型</h2><p><img src="/image-6.png" alt="alt text"><br>配置：<br>模型提供方: grok-beta<br>API模式: OpenAI API兼容<br>名称: grok-beta (必须和模型提供方一致)<br>API域名: <a target="_blank" rel="noopener" href="https://api.x.ai/">https://api.x.ai</a><br>API路径: &#x2F;v1&#x2F;chat&#x2F;completions<br>API密钥: 第2步的密钥复制过来即可<br>模型: grok-beta</p>
-<p><img src="/image-7.png" alt="alt text"></p>
-<h2 id="7、使用"><a href="#7、使用" class="headerlink" title="7、使用"></a>7、使用</h2><p>创建新对话即可默认使用grok-beta模型<br><img src="/image-8.png" alt="alt text"></p>
-<h2 id="8、话外"><a href="#8、话外" class="headerlink" title="8、话外"></a>8、话外</h2><p>如果觉得上述设置比较麻烦，可以下载Cherry Studio,可以自动获取硅基流动等平台的api，简单配置即可快速使用：<br>项目地址：</p>
-<p>安装后打开界面：</p>
-<p>点击设置：</p>
-<p>选择模型：</p>
-<p>点击密钥旁边的获取key即可：</p>
-<p><img src="https://raw.githubusercontent.com/yuchenlui/picture/main/images/20250331_175735.png" alt="alt text"></p>
-<p><img src="https://raw.githubusercontent.com/yuchenlui/picture/main/images/20250331_180405.png" alt="alt text"></p>
-
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        
-        
-    </div>
-    <a href="/2024/12/08/Grok--%E9%AB%98%E6%95%88%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C%E5%BF%85%E5%A4%87/" class="go-post">阅读全文</a>
-</div>
-
-<div class="post">
-    <a href="/2024/12/06/%E6%89%B9%E9%87%8F%E5%88%86%E5%AD%90%E5%AF%B9%E6%8E%A5/">
-        <h2 class="post-title">批量分子对接</h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2024/12/6
-        </span>
-        
-        
-    </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <p>基础知识：比如为何需要pdbqt格式<br>分子对接基础知识 - xiaojikuaipao - 博客园 (cnblogs.com)</p>
-<p>安装的指导文件看下面这些</p>
-<p>vina的指导文档，必看（提供了好几种安装方式，一种不行换一种，其实操作非常详细了，很多都不一定需要手动调整，直接Linux里面用就行）<br>Installation — Autodock Vina 1.2.0 documentation (autodock-vina.readthedocs.io)<br>vina的指导pdf<br><a target="_blank" rel="noopener" href="https://autodock-vina.readthedocs.io/_/downloads/en/latest/pdf/">https://autodock-vina.readthedocs.io/_/downloads/en/latest/pdf/</a></p>
-<p>Open Babel的安装<br>Open Babel的安装与使用 - 云+社区 - 腾讯云 (tencent.com)</p>
-<p>一，蛋白的下载和处理</p>
-<ol>
-<li>PDB文件内容<br>文献搜索，或者网站中找，但老实说它的搜索功能有点奇怪，有时候不同关键词（但是应该指向的是一种东西）不同结果<br>RCSB PDB: Homepage</li>
-</ol>
-<p>2.PDB文件的处理<br>2.1 去除原有小分子ligand+加氢（polar)+导出为pdbqt文件<br>Discover_studio<br>【八分熟肉】【分子对接】使用Discovery_studio进行分子对接前蛋白质预处理_哔哩哔哩_bilibili</p>
-<p>或者pymol 处理</p>
-<p>还要安装windows版本的MGLtools，主要是为了导出pdbqt文件，操作如下</p>
-<p>image.png<br>3.对接的口袋哪里找<br>用这个网站预测，然后下载活性区域<br>Zentrum für Bioinformatik: Universität Hamburg - Proteins Plus Server</p>
-<p>4.使用autodocktools进行活性口袋的预测,得到配置文件config.txt<br>receptor&#x3D;<br>ligand&#x3D;</p>
-<p>center_x&#x3D;100.657<br>center_y&#x3D;6.351<br>center_z&#x3D;40.898</p>
-<p>size_x&#x3D;46<br>size_y&#x3D;34<br>size_z&#x3D;28</p>
-<p>exhaustiveness&#x3D;16<br>num_modes&#x3D;9<br>energy_range&#x3D;4</p>
-<p>二，软件的安装<br>vina 和openbabel的安装<br>2.11 vina的conda和pip安装<br>这里注意要是python3.7的环境，因为最新版本已经到10了，所以如果直接安装python3的话，会装到python3.10，会有报错</p>
-<p>conda create -n vina2 python&#x3D;3.7<br>conda activate vina2<br>pip install -U numpy vina<br>但是奇葩的是虽然安装上，但是输入vina是没有办法调用的，不知道什么原因，但是好在官网提供了其他方式，直接下载即可用<br>Installation — Autodock Vina 1.2.0 documentation (autodock-vina.readthedocs.io)</p>
-<p>2.12 vina的直接使用<br>Releases · ccsb-scripps&#x2F;AutoDock-Vina (github.com)</p>
-<p>注意要给权限</p>
-<p>chmod 755 vina_1.2.3_linux_x86_64<br>调用出结果即可</p>
-<p>.&#x2F;vina_1.2.0_linux_x86_64 –help</p>
-<h2 id="或者使用绝对路径"><a href="#或者使用绝对路径" class="headerlink" title="或者使用绝对路径"></a>或者使用绝对路径</h2><p>2.13 官网下载vina(最佳方式，推荐）<br>使用了半天才发现，官网这个下载才是最佳的，Linux下载解压之后，里面还有一个叫vina_split的脚本，这个很重要，因为如果你从zinc上下载的是pdbqt格式的话，下载的pbdqt格式是一个整体，需要用这个软件去分割<br>Download AutoDock4 – AutoDock (scripps.edu)</p>
-<p>2.13 openbabel<br>用来解压mol文件，因为我们从zinc数据库下载的是一个mol2的压缩文件，要用这个进行解压</p>
-<p>conda install -y openbabel  ## 用来解压mol文件<br>###常用分子格式转换命令，和上下文其实关系不大，属于后来补充的一些操作方法<br>mol2格式转pdbqt格式：<br>obabel -imol2 ligand.mol2 -opdbqt -O ligand.pdbqt</p>
-<p>pdb格式转mol2格式：<br>obabel -ipdb ligand.pdb -omol2 ligand.mol2</p>
-<p>smiles格式转2D的sdf格式：<br>obabel ligands.smi -O ligands.sdf –gen2d</p>
-<p>smiles格式转3D的sdf格式：<br>obabel ligands.smi -O ligands.sdf –gen3d</p>
-<p>sdf格式转smiles格式，删除氢：<br>obabel ligands.sdf -osmi -O ligands.smi -d</p>
-<p>sdf格式转smiles格式，添加氢：<br>obabel ligands.sdf -O ligands.smi -h<br>2.2 MGLTools的安装<br>用来将mol2转换为pdbqt文件，注意看下面的这个教程的操作</p>
-<p>直接下载，然后解压即可，需要用到其中的prepare_ligand4.py</p>
-<p>Downloads – mgltools (scripps.edu)</p>
-<p>Linux上安装MGLtools - 知乎 (zhihu.com)</p>
-<p>bash $MGL_ROOT&#x2F;install.sh</p>
-<p>!后面会出现install.sh后面会出现几个alias，要将其放入.bashrc，还要source一下</p>
-<p>这个软件因为是python2写的，所以注意需要用到python2的环境,所以按照上面的教程设置2也行，或者直接创建conda的python2的环境</p>
-<p> conda create -n vina3 python&#x3D;2.7<br>三， zinc小分子数据库的下载<br>如何从ZINC数库（<a target="_blank" rel="noopener" href="http://www.zinc15.docking.org)下载虚拟筛选化合物库/">www.zinc15.docking.org）下载虚拟筛选化合物库</a> - 知乎 (zhihu.com)</p>
-<p>按照第一个视频上面的操作就好，我们下载的是mol2格式，通过fda认证的小分子药物<br>ZINC (docking.org)</p>
-<p>四.基础操作<br>4.1 obabel解压缩<br>首先我们下载的是一个fda.mol2文件，这是个大的压缩文件,要使用obabel 进行解压缩成若干个小的mol2文件</p>
-<p>obabel -i mol2 fda.mol2 -o mol2 -O fda.mol2 -m<br>注：其实看上面就知道其实不需要prepare这个obabel 也可以将mol2转换为pdbqt</p>
-<p>4.2 使用MGLTools中的小工具循环将mol2文件转换为pdbqt文件<br> for i in *mol2;do echo $i; pythonsh ~&#x2F;Biosfot&#x2F;mgltools_x86_64Linux2_1.5.6&#x2F;MGLToolsPckgs&#x2F;AutoDockTools&#x2F;Utilities24&#x2F;prepare_ligand4.py  -l $i $i.pdbqt ;done</p>
-<p>4.3 进行分子对接<br>因为我使用的是不需要安装的vina，也就是GitHub下载的版本，这个版本又和视频之中的不一样，会少了一个log选项，所以你如果是按照视频之中的安装，那么分子对接的命令和我是不一致的,help一下命令，看看参数</p>
-<p>AutoDock Vina v1.2.3</p>
-<p>Input:<br>  –receptor arg             rigid part of the receptor (PDBQT)<br>  –flex arg                 flexible side chains, if any (PDBQT)<br>  –ligand arg               ligand (PDBQT)<br>  –batch arg                batch ligand (PDBQT)<br>  –scoring arg (&#x3D;vina)      scoring function (ad4, vina or vinardo)</p>
-<p>Search space (required):<br>  –maps arg                 affinity maps for the autodock4.2 (ad4) or vina<br>                             scoring function<br>  –center_x arg             X coordinate of the center (Angstrom)<br>  –center_y arg             Y coordinate of the center (Angstrom)<br>  –center_z arg             Z coordinate of the center (Angstrom)<br>  –size_x arg               size in the X dimension (Angstrom)<br>  –size_y arg               size in the Y dimension (Angstrom)<br>  –size_z arg               size in the Z dimension (Angstrom)<br>  –autobox                  set maps dimensions based on input ligand(s) (for<br>                             –score_only and –local_only)</p>
-<p>Output (optional):<br>  –out arg                  output models (PDBQT), the default is chosen based<br>                             on the ligand file name<br>  –dir arg                  output directory for batch mode<br>  –write_maps arg           output filename (directory + prefix name) for<br>                             maps. Option –force_even_voxels may be needed to<br>                             comply with .map format</p>
-<p>Misc (optional):<br>  –cpu arg (&#x3D;0)             the number of CPUs to use (the default is to try<br>                             to detect the number of CPUs or, failing that, use<br>                             1)<br>  –seed arg (&#x3D;0)            explicit random seed<br>  –exhaustiveness arg (&#x3D;8)  exhaustiveness of the global search (roughly<br>                             proportional to time): 1+<br>  –max_evals arg (&#x3D;0)       number of evaluations in each MC run (if zero,<br>                             which is the default, the number of MC steps is<br>                             based on heuristics)<br>  –num_modes arg (&#x3D;9)       maximum number of binding modes to generate<br>  –min_rmsd arg (&#x3D;1)        minimum RMSD between output poses<br>  –energy_range arg (&#x3D;3)    maximum energy difference between the best binding<br>                             mode and the worst one displayed (kcal&#x2F;mol)<br>  –spacing arg (&#x3D;0.375)     grid spacing (Angstrom)<br>  –verbosity arg (&#x3D;1)       verbosity (0&#x3D;no output, 1&#x3D;normal, 2&#x3D;verbose)</p>
-<p>Configuration file (optional):<br>  –config arg               the above options can be put here</p>
-<p>Information (optional):<br>  –help                     display usage summary<br>  –help_advanced            display usage summary with advanced options<br>  –version                  display program version</p>
-<p>先简单测试一波一个分子能不能操作</p>
-<p>.&#x2F;vina_1.2.3_linux_x86_64 –config config.txt –ligand fda666.pdbqt –out test&#x2F;666.pdbqt<br>可以，那么循环操作就可以了</p>
-<p>for i in *pdbqt;do .&#x2F;vina_1.2.3_linux_x86_64 –config config.txt –ligand $i –out test&#x2F;$i.log ;done<br>不过很明显从参数来看vina 1.2版本以上是内置了使用cpu并行运算的，一次搞n个分子</p>
-<p>但直接使用Linux和python的并行操作也可以</p>
-<p>补充：vina可以在python中使用的脚本<br>Python scripting — Autodock Vina 1.2.0 documentation (autodock-vina.readthedocs.io)</p>
-<p>#! &#x2F;usr&#x2F;bin&#x2F;env python</p>
-<h1 id="coding-utf-8"><a href="#coding-utf-8" class="headerlink" title="-- coding: utf-8 --"></a>-<em>- coding: utf-8 -</em>-</h1><h1 id=""><a href="#" class="headerlink" title=""></a></h1><h1 id="My-first-example-with-AutoDock-Vina-in-python"><a href="#My-first-example-with-AutoDock-Vina-in-python" class="headerlink" title="My first example with AutoDock Vina in python"></a>My first example with AutoDock Vina in python</h1><h1 id="-1"><a href="#-1" class="headerlink" title=""></a></h1><p>from vina import Vina</p>
-<p>v &#x3D; Vina(sf_name&#x3D;’vina’)</p>
-<p>v.set_receptor(‘1iep_receptor.pdbqt’)</p>
-<p>v.set_ligand_from_file(‘1iep_ligand.pdbqt’)<br>v.compute_vina_maps(center&#x3D;[15.190, 53.903, 16.917], box_size&#x3D;[20, 20, 20])</p>
-<h1 id="Score-the-current-pose"><a href="#Score-the-current-pose" class="headerlink" title="Score the current pose"></a>Score the current pose</h1><p>energy &#x3D; v.score()<br>print(‘Score before minimization: %.3f (kcal&#x2F;mol)’ % energy[0])</p>
-<h1 id="Minimized-locally-the-current-pose"><a href="#Minimized-locally-the-current-pose" class="headerlink" title="Minimized locally the current pose"></a>Minimized locally the current pose</h1><p>energy_minimized &#x3D; v.optimize()<br>print(‘Score after minimization : %.3f (kcal&#x2F;mol)’ % energy_minimized[0])<br>v.write_pose(‘1iep_ligand_minimized.pdbqt’, overwrite&#x3D;True)</p>
-<h1 id="Dock-the-ligand"><a href="#Dock-the-ligand" class="headerlink" title="Dock the ligand"></a>Dock the ligand</h1><p>v.dock(exhaustiveness&#x3D;32, n_poses&#x3D;20)<br>v.write_poses(‘1iep_ligand_vina_out.pdbqt’, n_poses&#x3D;5, overwrite&#x3D;True)<br>之后还有分子动力学模拟，之前看过一篇文献叫Beware of docking!<br>，大概意思就是docking只能提供一个切面，分子动力学模拟比较可靠一点。所以如果想要深入的话，可以以分子对接作为筛选，筛选前面几个分子然后去做分子动力学模拟。</p>
-
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        
-        
-    </div>
-    <a href="/2024/12/06/%E6%89%B9%E9%87%8F%E5%88%86%E5%AD%90%E5%AF%B9%E6%8E%A5/" class="go-post">阅读全文</a>
-</div>
-
-<div class="post">
-    <a href="/2024/11/27/%E5%A4%9A%E4%B8%AAGSE%E6%95%B0%E6%8D%AE%E9%9B%86%E7%9B%B8%E4%BA%92%E5%8D%B0%E8%AF%81%E7%9A%84%E5%88%86%E6%9E%90%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5%E7%99%8C%E7%97%87%E7%9B%B8%E5%85%B3%E5%9F%BA%E5%9B%A0%E8%A1%A8%E8%BE%BE%E4%B8%BA%E4%BE%8B%EF%BC%89/">
-        <h2 class="post-title">多个GSE数据集相互印证的分析教程（以癌症相关基因表达为例）</h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2024/11/27
-        </span>
-        
-        
-    </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <h1 id="多个GSE数据相互印证分析教程（以癌症相关基因表达为例）"><a href="#多个GSE数据相互印证分析教程（以癌症相关基因表达为例）" class="headerlink" title="多个GSE数据相互印证分析教程（以癌症相关基因表达为例）"></a>多个GSE数据相互印证分析教程（以癌症相关基因表达为例）</h1><h2 id="一、安装必要的R包"><a href="#一、安装必要的R包" class="headerlink" title="一、安装必要的R包"></a>一、安装必要的R包</h2><ol>
-<li>确保已安装<code>BiocManager</code>。如果未安装，在R控制台中输入以下命令进行安装：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">if (!requireNamespace(&quot;BiocManager&quot;, quietly = TRUE))</span><br><span class="line">    install.packages(&quot;BiocManager&quot;)</span><br></pre></td></tr></table></figure></li>
-<li>安装所需的包，包括<code>geoquery</code>用于下载GSE数据、<code>limma</code>用于差异基因分析、<code>clusterProfiler</code>用于功能富集分析以及<code>org.Hs.eg.db</code>（假设研究人类癌症数据，根据物种调整）用于基因注释：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">BiocManager::install(c(&quot;geoquery&quot;, &quot;limma&quot;, &quot;clusterProfiler&quot;, &quot;org.Hs.eg.db&quot;))</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h2 id="二、下载多个GSE数据"><a href="#二、下载多个GSE数据" class="headerlink" title="二、下载多个GSE数据"></a>二、下载多个GSE数据</h2><ol>
-<li>定义要下载的GSE数据集列表（这里以两个GSE数据集为例，实际可根据研究需要增加）：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gse_ids &lt;- c(&quot;GSE12345&quot;, &quot;GSE56789&quot;)</span><br></pre></td></tr></table></figure></li>
-<li>循环下载每个GSE数据集并进行预处理：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">all_gset &lt;- list()</span><br><span class="line">for (gse_id in gse_ids) &#123;</span><br><span class="line">    gset &lt;- getGEO(gse_id, GSEMatrix = TRUE, AnnotGPL = TRUE)</span><br><span class="line">    if (length(gset) &gt; 1) idx &lt;- grep(&quot;GPL&quot;, attr(gset, &quot;names&quot;)) else idx &lt;- 1</span><br><span class="line">    gset &lt;- gset[[idx]]</span><br><span class="line">    all_gset[[gse_id]] &lt;- gset</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h2 id="三、数据预处理与差异基因分析（分别对每个GSE数据集进行）"><a href="#三、数据预处理与差异基因分析（分别对每个GSE数据集进行）" class="headerlink" title="三、数据预处理与差异基因分析（分别对每个GSE数据集进行）"></a>三、数据预处理与差异基因分析（分别对每个GSE数据集进行）</h2><ol>
-<li>定义一个函数来进行数据预处理和差异基因分析：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">perform_differential_analysis &lt;- function(gset) &#123;</span><br><span class="line">    exprs_matrix &lt;- exprs(gset)</span><br><span class="line">    pData &lt;- pData(gset)</span><br><span class="line">    group &lt;- factor(pData$`group_column_name` == &quot;case_group&quot;, levels = c(FALSE, TRUE), labels = c(&quot;control&quot;, &quot;case&quot;)) # 根据实际分组列名修改</span><br><span class="line">    design &lt;- model.matrix(~0 + group)</span><br><span class="line">    colnames(design) &lt;- levels(group)</span><br><span class="line">    fit &lt;- lmFit(exprs_matrix, design)</span><br><span class="line">    contrast.matrix &lt;- makeContrasts(case - control, levels = design)</span><br><span class="line">    fit2 &lt;- contrasts.fit(fit, contrast.matrix)</span><br><span class="line">    fit2 &lt;- eBayes(fit2)</span><br><span class="line">    topTable &lt;- topTable(fit2, coef = 1, number = Inf)</span><br><span class="line">    return(topTable)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li>对每个GSE数据集应用该函数进行差异基因分析：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">diff_results &lt;- lapply(all_gset, perform_differential_analysis)</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h2 id="四、提取差异基因符号并合并（考虑多个数据集的一致性）"><a href="#四、提取差异基因符号并合并（考虑多个数据集的一致性）" class="headerlink" title="四、提取差异基因符号并合并（考虑多个数据集的一致性）"></a>四、提取差异基因符号并合并（考虑多个数据集的一致性）</h2><ol>
-<li>定义一个函数来提取差异基因符号：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">extract_gene_symbols &lt;- function(diff_result) &#123;</span><br><span class="line">    gene_symbols &lt;- rownames(diff_result)</span><br><span class="line">    return(gene_symbols)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li>提取每个数据集的差异基因符号并合并：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">all_gene_symbols &lt;- lapply(diff_results, extract_gene_symbols)</span><br><span class="line">common_gene_symbols &lt;- Reduce(intersect, all_gene_symbols)</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h2 id="五、基因注释（使用org-Hs-eg-db）"><a href="#五、基因注释（使用org-Hs-eg-db）" class="headerlink" title="五、基因注释（使用org.Hs.eg.db）"></a>五、基因注释（使用<code>org.Hs.eg.db</code>）</h2><ol>
-<li>对共同差异基因进行注释：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">library(org.Hs.eg.db)</span><br><span class="line">gene_anno &lt;- AnnotationDbi::select(org.Hs.eg.db, keys = common_gene_symbols, columns = c(&quot;ENTREZID&quot;, &quot;GENENAME&quot;, &quot;DESCRIPTION&quot;), keytype = &quot;SYMBOL&quot;)</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h2 id="六、GO富集分析（使用clusterProfiler）"><a href="#六、GO富集分析（使用clusterProfiler）" class="headerlink" title="六、GO富集分析（使用clusterProfiler）"></a>六、GO富集分析（使用<code>clusterProfiler</code>）</h2><ol>
-<li>准备用于GO富集分析的数据（获取共同差异基因的ENTREZ ID）：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">gene_entrezids &lt;- gene_anno$ENTREZID[match(common_gene_symbols, gene_anno$SYMBOL)]</span><br><span class="line">gene_entrezids &lt;- gene_entrezids[!is.na(gene_entrezids)]</span><br></pre></td></tr></table></figure></li>
-<li>进行GO富集分析（以BP为例）：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">library(clusterProfiler)</span><br><span class="line">go_bp &lt;- enrichGO(gene = gene_entrezids, universe = rownames(org.Hs.eg.db), OrgDb = org.Hs.eg.db, keyType = &quot;ENTREZID&quot;, ont = &quot;BP&quot;, pAdjustMethod = &quot;BH&quot;, pvalueCutoff = 0.05, qvalueCutoff = 0.05)</span><br><span class="line">dotplot(go_bp)</span><br><span class="line">barplot(go_bp)</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h2 id="七、GSEA分析（使用clusterProfiler）"><a href="#七、GSEA分析（使用clusterProfiler）" class="headerlink" title="七、GSEA分析（使用clusterProfiler）"></a>七、GSEA分析（使用<code>clusterProfiler</code>）</h2><ol>
-<li>准备GSEA分析所需的数据（假设使用第一个GSE数据集的表达矩阵和分组信息，可根据需要调整）：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">gsea_data &lt;- exprs(all_gset[[1]])</span><br><span class="line">gsea_cl &lt;- pData(all_gset[[1]])$`group_column_name` == &quot;case_group&quot; # 根据实际分组列名修改</span><br></pre></td></tr></table></figure></li>
-<li>进行GSEA分析（以hallmark基因集为例）：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">library(clusterProfiler)</span><br><span class="line">library(msigdbr)</span><br><span class="line">hallmarks &lt;- msigdbr(species = &quot;Homo sapiens&quot;, category = &quot;H&quot;)</span><br><span class="line">hallmarks_gene_sets &lt;- split(x = hallmarks$entrez_gene, f = hallmarks$gs_name)</span><br><span class="line">gsea_results &lt;- GSEA(gsea_data, geneSetID = hallmarks_gene_sets, minGSSize = 15, maxGSSize = 500, pvalueCutoff = 0.05, pAdjustMethod = &quot;BH&quot;, TERM2GENE = hallmarks_gene_sets, verbose = FALSE)</span><br><span class="line">gseaplot2(gsea_results, geneSetID = 1) # 可视化第一个显著富集的基因集结果，可根据需要调整</span><br></pre></td></tr></table></figure></li>
-</ol>
-<p>通过以上步骤，可以对多个GSE数据进行综合分析，从差异基因、功能富集等方面寻找一致性的证据，为癌症相关研究或其他生物学问题提供更可靠的结论。在实际应用中，需要根据数据特点和研究目的进行适当的调整和优化。</p>
-
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        
-        
-    </div>
-    <a href="/2024/11/27/%E5%A4%9A%E4%B8%AAGSE%E6%95%B0%E6%8D%AE%E9%9B%86%E7%9B%B8%E4%BA%92%E5%8D%B0%E8%AF%81%E7%9A%84%E5%88%86%E6%9E%90%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5%E7%99%8C%E7%97%87%E7%9B%B8%E5%85%B3%E5%9F%BA%E5%9B%A0%E8%A1%A8%E8%BE%BE%E4%B8%BA%E4%BE%8B%EF%BC%89/" class="go-post">阅读全文</a>
-</div>
-
-<div class="post">
-    <a href="/2024/11/27/GSE%E6%95%B0%E6%8D%AE%E4%B8%8B%E8%BD%BD%E3%80%81%E6%B3%A8%E9%87%8A%E3%80%81%E5%B7%AE%E5%BC%82%E5%9F%BA%E5%9B%A0%E5%88%86%E6%9E%90%E3%80%81GO%E5%AF%8C%E9%9B%86%E5%88%86%E6%9E%90%E4%B8%8EGSEA%E5%AF%8C%E9%9B%86%E5%88%86%E6%9E%90%E6%95%99%E7%A8%8B/">
-        <h2 class="post-title">GSE数据下载、注释、差异基因分析、GO富集分析与GSEA富集分析教程</h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2024/11/27
-        </span>
-        
-        
-    </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <h1 id="GSE数据下载、差异基因分析、GO富集分析与GSEA分析教程"><a href="#GSE数据下载、差异基因分析、GO富集分析与GSEA分析教程" class="headerlink" title="GSE数据下载、差异基因分析、GO富集分析与GSEA分析教程"></a>GSE数据下载、差异基因分析、GO富集分析与GSEA分析教程</h1><h2 id="一、安装必要的R包"><a href="#一、安装必要的R包" class="headerlink" title="一、安装必要的R包"></a>一、安装必要的R包</h2><ol>
-<li>确保已安装<code>BiocManager</code>。如果未安装，在R控制台中输入以下命令进行安装：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">if (!requireNamespace(&quot;BiocManager&quot;, quietly = TRUE))</span><br><span class="line">    install.packages(&quot;BiocManager&quot;)</span><br></pre></td></tr></table></figure></li>
-<li>安装<code>geoquery</code>包以及其他用于数据分析的包（如<code>limma</code>用于差异基因分析，<code>clusterProfiler</code>用于GO富集分析和GSEA分析等）：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">BiocManager::install(c(&quot;geoquery&quot;, &quot;limma&quot;, &quot;clusterProfiler&quot;, &quot;org.Hs.eg.db&quot;))</span><br></pre></td></tr></table></figure>
-<img src="/image.png" alt="alt text"></li>
-</ol>
-<h2 id="二、使用geoquery下载GSE数据"><a href="#二、使用geoquery下载GSE数据" class="headerlink" title="二、使用geoquery下载GSE数据"></a>二、使用<code>geoquery</code>下载GSE数据</h2><ol>
-<li>加载<code>geoquery</code>包：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">library(geoquery)</span><br></pre></td></tr></table></figure></li>
-<li>以GSE12345（示例数据编号，实际使用时替换为你要下载的GSE编号）为例，下载数据：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">gset &lt;- getGEO(&quot;GSE12345&quot;, GSEMatrix = TRUE, AnnotGPL = TRUE)</span><br><span class="line">if (length(gset) &gt; 1) idx &lt;- grep(&quot;GPL&quot;, attr(gset, &quot;names&quot;)) else idx &lt;- 1</span><br><span class="line">gset &lt;- gset[[idx]]</span><br></pre></td></tr></table></figure>
-这将下载GSE数据并将其存储为一个<code>ExpressionSet</code>对象。</li>
-</ol>
-<h2 id="三、数据预处理与差异基因分析"><a href="#三、数据预处理与差异基因分析" class="headerlink" title="三、数据预处理与差异基因分析"></a>三、数据预处理与差异基因分析</h2><ol>
-<li>提取表达矩阵和表型信息：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">exprs_matrix &lt;- exprs(gset)</span><br><span class="line">pData &lt;- pData(gset)</span><br></pre></td></tr></table></figure></li>
-<li>构建分组信息（假设数据中有两组，如病例组和对照组，这里根据实际情况修改）：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">group &lt;- factor(pData$`group_column_name` == &quot;case_group&quot;, levels = c(FALSE, TRUE), labels = c(&quot;control&quot;, &quot;case&quot;))</span><br></pre></td></tr></table></figure></li>
-<li>使用<code>limma</code>进行差异基因分析：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">library(limma)</span><br><span class="line">design &lt;- model.matrix(~0 + group)</span><br><span class="line">colnames(design) &lt;- levels(group)</span><br><span class="line">fit &lt;- lmFit(exprs_matrix, design)</span><br><span class="line">contrast.matrix &lt;- makeContrasts(case - control, levels = design)</span><br><span class="line">fit2 &lt;- contrasts.fit(fit, contrast.matrix)</span><br><span class="line">fit2 &lt;- eBayes(fit2)</span><br><span class="line">topTable &lt;- topTable(fit2, coef = 1, number = Inf)</span><br></pre></td></tr></table></figure>
-这将得到差异基因的结果，其中<code>topTable</code>包含了差异基因的相关信息（如logFC、P值等）。</li>
-</ol>
-<h2 id="四、差异基因注释"><a href="#四、差异基因注释" class="headerlink" title="四、差异基因注释"></a>四、差异基因注释</h2><ol>
-<li>提取差异基因的基因符号（假设基因符号在<code>topTable</code>的<code>rownames</code>中）： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gene_symbols &lt;- rownames(topTable)</span><br></pre></td></tr></table></figure></li>
-<li>使用<code>org.Hs.eg.db</code>（人类基因注释数据库，根据物种选择合适的注释包）进行基因注释：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">library(org.Hs.eg.db)</span><br><span class="line">gene_anno &lt;- AnnotationDbi::select(org.Hs.eg.db, keys = gene_symbols, columns = c(&quot;ENTREZID&quot;, &quot;GENENAME&quot;, &quot;DESCRIPTION&quot;), keytype = &quot;SYMBOL&quot;)</span><br></pre></td></tr></table></figure>
-这将为差异基因添加ENTREZ ID、基因名称和描述等注释信息。</li>
-</ol>
-<h2 id="五、GO富集分析"><a href="#五、GO富集分析" class="headerlink" title="五、GO富集分析"></a>五、GO富集分析</h2><ol>
-<li>准备用于GO富集分析的数据：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">gene_entrezids &lt;- gene_anno$ENTREZID[match(gene_symbols, gene_anno$SYMBOL)]</span><br><span class="line">gene_entrezids &lt;- gene_entrezids[!is.na(gene_entrezids)]</span><br></pre></td></tr></table></figure></li>
-<li>使用<code>clusterProfiler</code>进行GO富集分析（以BP（生物学过程）为例，也可进行MF（分子功能）和CC（细胞组成）分析）：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">library(clusterProfiler)</span><br><span class="line">go_bp &lt;- enrichGO(gene = gene_entrezids, universe = rownames(org.Hs.eg.db), OrgDb = org.Hs.eg.db, keyType = &quot;ENTREZID&quot;, ont = &quot;BP&quot;, pAdjustMethod = &quot;BH&quot;, pvalueCutoff = 0.05, qvalueCutoff = 0.05)</span><br><span class="line">dotplot(go_bp)</span><br><span class="line">barplot(go_bp)</span><br></pre></td></tr></table></figure>
-这将得到GO富集分析的结果，并通过<code>dotplot</code>和<code>barplot</code>可视化展示。</li>
-</ol>
-<h2 id="六、GSEA分析"><a href="#六、GSEA分析" class="headerlink" title="六、GSEA分析"></a>六、GSEA分析</h2><ol>
-<li>准备GSEA分析所需的数据（假设使用与差异基因分析相同的表达矩阵和分组信息）：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">gsea_data &lt;- exprs_matrix</span><br><span class="line">gsea_cl &lt;- group</span><br></pre></td></tr></table></figure></li>
-<li>使用<code>clusterProfiler</code>进行GSEA分析（以hallmark基因集为例，也可使用其他基因集）：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">library(clusterProfiler)</span><br><span class="line">library(msigdbr)</span><br><span class="line">hallmarks &lt;- msigdbr(species = &quot;Homo sapiens&quot;, category = &quot;H&quot;)</span><br><span class="line">hallmarks_gene_sets &lt;- split(x = hallmarks$entrez_gene, f = hallmarks$gs_name)</span><br><span class="line">gsea_results &lt;- GSEA(gsea_data, geneSetID = hallmarks_gene_sets, minGSSize = 15, maxGSSize = 500, pvalueCutoff = 0.05, pAdjustMethod = &quot;BH&quot;, TERM2GENE = hallmarks_gene_sets, verbose = FALSE)</span><br><span class="line">gseaplot2(gsea_results, geneSetID = 1) # 可视化第一个显著富集的基因集结果，可根据需要调整</span><br></pre></td></tr></table></figure></li>
-</ol>
-<p>通过以上步骤，你可以使用<code>geoquery</code>下载GSE数据，并进行差异基因分析、GO富集分析和GSEA分析，从而深入挖掘基因表达数据中的生物学信息。在实际操作中，需要根据具体的数据特点和研究问题进行适当的调整和优化。</p>
-
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        
-        
-    </div>
-    <a href="/2024/11/27/GSE%E6%95%B0%E6%8D%AE%E4%B8%8B%E8%BD%BD%E3%80%81%E6%B3%A8%E9%87%8A%E3%80%81%E5%B7%AE%E5%BC%82%E5%9F%BA%E5%9B%A0%E5%88%86%E6%9E%90%E3%80%81GO%E5%AF%8C%E9%9B%86%E5%88%86%E6%9E%90%E4%B8%8EGSEA%E5%AF%8C%E9%9B%86%E5%88%86%E6%9E%90%E6%95%99%E7%A8%8B/" class="go-post">阅读全文</a>
-</div>
-
-<div class="post">
-    <a href="/2024/11/27/%E7%94%9F%E4%BF%A1%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B%EF%BC%9AR%E3%80%81Rstudio%E3%80%81Python%E3%80%81VsCode%E5%8F%8A%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/">
-        <h2 class="post-title">生信环境搭建教程：R、Rstudio、Python、VsCode及相关配置</h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2024/11/27
-        </span>
-        
-        
-    </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <p>编程环境搭建教程：R、RStudio、Rtools、Mamba、VSCode 及相关配置<br>一、安装 R<br>访问 R 官网（<a target="_blank" rel="noopener" href="https://www.r-project.org/%EF%BC%89%EF%BC%8C%E5%9C%A8%E9%A6%96%E9%A1%B5%E6%89%BE%E5%88%B0">https://www.r-project.org/），在首页找到</a> “Download” 选项进入下载页面，根据操作系统选择合适版本（如 Windows 系统点击 “Download R for Windows” 后选择 “base” 链接下载基础安装包）。<br>找到下载的安装包（.exe 文件）双击运行，在安装向导中依次选择安装语言（一般为英语）、安装目录（建议默认）、组件（一般默认）、启动选项（默认），最后点击 “Install” 开始安装并等待完成。<br>[此处插入 R 官网首页、下载页面、安装向导部分页面截图，分别标注为图 1、图 2、图 3]<br>二、安装 RStudio<br>前往 RStudio 官网（<a target="_blank" rel="noopener" href="https://posit.co/%EF%BC%89%EF%BC%8C%E7%82%B9%E5%87%BB%E9%A6%96%E9%A1%B5">https://posit.co/），点击首页</a> “Download” 按钮进入下载页面，依据操作系统选择相应版本（Windows 系统选择 “RStudio Desktop” 的 Windows 版本）。<br>运行下载的 RStudio 安装包（.exe 文件），在安装向导中点击 “Next”，选择安装目录（可默认），按需选择创建桌面快捷方式等选项后继续点击 “Next”，最后点击 “Install” 等待安装结束。<br>[此处插入 RStudio 官网首页、下载页面、安装向导部分页面截图，分别标注为图 4、图 5、图 6]<br>三、安装 Rtools（仅 Windows 系统适用）<br>打开 Rtools 官网（<a target="_blank" rel="noopener" href="https://cran.r-project.org/bin/windows/Rtools/%EF%BC%89%EF%BC%8C%E6%A0%B9%E6%8D%AE">https://cran.r-project.org/bin/windows/Rtools/），根据</a> R 版本选择合适的 Rtools 版本并下载。<br>双击运行下载的 Rtools 安装包（.exe 文件），在安装向导中点击 “Next”，选择安装目录（建议默认）、组件（默认），安装过程中选择 “Add Rtools to the system PATH for the current user” 添加系统环境变量，点击 “OK” 后继续点击 “Install” 等待安装完成。<br>[此处插入 Rtools 官网页面、下载链接位置、安装向导部分页面截图，分别标注为图 7、图 8、图 9]<br>四、安装 Mamba<br>在浏览器访问 Mambaforge 下载页面（<a target="_blank" rel="noopener" href="https://github.com/conda-forge/miniforge#mambaforge%EF%BC%89%EF%BC%8C%E6%A0%B9%E6%8D%AE%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%80%89%E6%8B%A9%E5%90%88%E9%80%82%E7%89%88%E6%9C%AC%EF%BC%88%E5%A6%82">https://github.com/conda-forge/miniforge#mambaforge），根据操作系统选择合适版本（如</a> Windows 64 位系统选择 “Mambaforge-Windows-x86_64.exe”）下载。<br>运行下载的安装包，在安装向导中点击 “Next”，选择安装目录（注意路径不含中文），选择 “Add Mamba to my PATH environment variable” 添加到系统路径，点击 “Next” 后点击 “Install” 等待安装完成。<br>[此处插入 Mambaforge 下载页面、安装向导部分页面截图，分别标注为图 10、图 11]<br>五、安装 VSCode<br>进入 VSCode 官网（<a target="_blank" rel="noopener" href="https://code.visualstudio.com/%EF%BC%89%EF%BC%8C%E7%82%B9%E5%87%BB%E9%A6%96%E9%A1%B5">https://code.visualstudio.com/），点击首页</a> “Download” 按钮进入下载页面，选择对应操作系统版本（Windows 系统点击 “Windows” 下载按钮）。<br>找到下载的 VSCode 安装包（.exe 文件）双击运行，在安装向导中点击 “Next”，选择安装目录（可默认），按需选择创建桌面快捷方式等选项后点击 “Next”，最后点击 “Install” 等待安装完成。<br>[此处插入 VSCode 官网首页、下载页面、安装向导部分页面截图，分别标注为图 12、图 13、图 14]<br>六、在 VSCode 中配置 R<br>打开 VSCode，点击左侧 “Extensions” 图标打开扩展面板，搜索 “R” 并安装 “R for Visual Studio Code” 扩展插件，安装完成后可能需重启 VSCode。<br>打开 VSCode 设置（点击左下角齿轮图标选择 “Settings”），搜索 “r.path”，若 R 安装路径未自动检测到，点击 “Edit in settings.json” 添加或修改 “r.rpath” 为 R 安装目录（如：”r.rpath”: “C:\Program Files\R\R-4.2.2\bin\R.exe”，注意反斜杠转义），保存后 VSCode 即可找到 R 执行路径。<br>[此处插入扩展面板搜索 R 插件、设置 R 路径相关截图，分别标注为图 15、图 17]<br>七、在 VSCode 中配置 Python（使用 Mamba 管理的环境）<br>打开命令提示符（Windows 系统搜索 “cmd” 打开），输入 “mamba create -n myenv python&#x3D;3.9”（创建名为 “myenv” 的 Python 3.9 环境，可按需更改）创建 Python 虚拟环境，等待 Mamba 下载安装完成。<br>打开 VSCode，点击左下角 Python 版本号（若未显示可在命令面板输入 “Python: Select Interpreter” 打开菜单），选择 “Enter interpreter path…”，找到创建的虚拟环境中的 Python 解释器路径（如：“C:\Users\YourUsername\mambaforge\envs\myenv\python.exe”）点击 “OK”，VSCode 将使用该解释器运行 Python 代码。<br>[此处插入创建虚拟环境命令执行过程、选择 Python 解释器相关截图，分别标注为图 18、图 19、图 20]<br>完成上述步骤后，即可使用这些工具进行编程与数据分析工作。</p>
-
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        
-        
-    </div>
-    <a href="/2024/11/27/%E7%94%9F%E4%BF%A1%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B%EF%BC%9AR%E3%80%81Rstudio%E3%80%81Python%E3%80%81VsCode%E5%8F%8A%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/" class="go-post">阅读全文</a>
-</div>
-
-
-        <div class="page-current">
+<article class="item">
+  <div class="cover">
+    <a href="/2024/12/08/Grok--%E9%AB%98%E6%95%88%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C%E5%BF%85%E5%A4%87/" itemprop="url" title="Grok--高效论文写作必备"><img data-src="https://tva4.sinaimg.cn/mw690/6833939bly1gipeu7txpzj20zk0m81kx.jpg"></a>
+  </div>
+  <div class="info">
     
-    <span class="current">1</span>
-    
-    
-    
-    
+<div class="meta">
+  <span class="item" title="创建时间：2024-12-08 23:11:33">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <time itemprop="dateCreated datePublished" datetime="2024-12-08T23:11:33+08:00">2024-12-08</time>
+  </span>
 </div>
 
+    <h3><a href="/2024/12/08/Grok--%E9%AB%98%E6%95%88%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C%E5%BF%85%E5%A4%87/" itemprop="url" title="Grok--高效论文写作必备">Grok--高效论文写作必备</a></h3>
+    <div class="excerpt">
+        1、注册登录官方地址https://x.ai/
+2、创建API密钥地址https://console.x.ai/
+3、打开chatBox的github页面https://github.com/Bin-Huang/chatbox
+4、下载并安装chatBox
+5、打开chatBox
+6、打开设置 模型-&amp;gt;模型提供方-&amp;gt;自定义提供模型配置：模型提供方: grok-betaAPI模式: OpenAI API兼容名称: grok-beta (必须和模型提供方一致)API域名: https://api.x.aiAPI路径:...
     </div>
-    
-    <div id="home-card">
-        <div id="card-style">
-    <div id="card-div">
-        <div class="avatar">
-            <img src="/images/avatar.jpg" alt="avatar" />
-        </div>
-        <div class="name">小路</div>
-        <div class="description">
-            <p>Description<br>Bioinformatics site…</p>
+    <a href="/2024/12/08/Grok--%E9%AB%98%E6%95%88%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C%E5%BF%85%E5%A4%87/" itemprop="url" title="Grok--高效论文写作必备" class="btn">more...</a>
+  </div>
+</article>
 
-        </div>
         
-        
-        <div class="friend-links">
-            
-            <div class="friend-link">
-                <a target="_blank" rel="noopener" href="https://space.bilibili.com/2084562">b站频道</a>
-            </div>
-            
-            <div class="friend-link">
-                <a target="_blank" rel="noopener" href="https://www.youtube.com/@MyWayEpisteme">油管频道</a>
-            </div>
-            
-            <div class="friend-link">
-                <a href="/%E5%8C%BB%E5%98%89SCI">公众号</a>
-            </div>
-            
-        </div>
-        
-    </div>
+<article class="item">
+  <div class="cover">
+    <a href="/2024/12/06/%E6%89%B9%E9%87%8F%E5%88%86%E5%AD%90%E5%AF%B9%E6%8E%A5/" itemprop="url" title="批量分子对接"><img data-src="https://tva4.sinaimg.cn/mw690/6833939bly1giciryrr3rj20zk0m8nhk.jpg"></a>
+  </div>
+  <div class="info">
+    
+<div class="meta">
+  <span class="item" title="创建时间：2024-12-06 10:35:58">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <time itemprop="dateCreated datePublished" datetime="2024-12-06T10:35:58+08:00">2024-12-06</time>
+  </span>
 </div>
 
+    <h3><a href="/2024/12/06/%E6%89%B9%E9%87%8F%E5%88%86%E5%AD%90%E5%AF%B9%E6%8E%A5/" itemprop="url" title="批量分子对接">批量分子对接</a></h3>
+    <div class="excerpt">
+        基础知识：比如为何需要pdbqt格式分子对接基础知识 - xiaojikuaipao - 博客园 (cnblogs.com)
+安装的指导文件看下面这些
+vina的指导文档，必看（提供了好几种安装方式，一种不行换一种，其实操作非常详细了，很多都不一定需要手动调整，直接Linux里面用就行）Installation — Autodock Vina 1.2.0 documentation...
     </div>
+    <a href="/2024/12/06/%E6%89%B9%E9%87%8F%E5%88%86%E5%AD%90%E5%AF%B9%E6%8E%A5/" itemprop="url" title="批量分子对接" class="btn">more...</a>
+  </div>
+</article>
+
+        
+<article class="item">
+  <div class="cover">
+    <a href="/2024/11/27/%E5%A4%9A%E4%B8%AAGSE%E6%95%B0%E6%8D%AE%E9%9B%86%E7%9B%B8%E4%BA%92%E5%8D%B0%E8%AF%81%E7%9A%84%E5%88%86%E6%9E%90%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5%E7%99%8C%E7%97%87%E7%9B%B8%E5%85%B3%E5%9F%BA%E5%9B%A0%E8%A1%A8%E8%BE%BE%E4%B8%BA%E4%BE%8B%EF%BC%89/" itemprop="url" title="多个GSE数据集相互印证的分析教程（以癌症相关基因表达为例）"><img data-src="https://tva4.sinaimg.cn/mw690/6833939bly1gipexbei4hj20zk0m8npd.jpg"></a>
+  </div>
+  <div class="info">
     
+<div class="meta">
+  <span class="item" title="创建时间：2024-11-27 20:06:24">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <time itemprop="dateCreated datePublished" datetime="2024-11-27T20:06:24+08:00">2024-11-27</time>
+  </span>
 </div>
 
-            <footer id="footer">
-    <div id="footer-wrap">
-        <div>
-            &copy;
-            2024 - 2025 小路Episteme
-            <span id="footer-icon">
-                <i class="fa-solid fa-font-awesome fa-fw"></i>
-            </span>
-            &commat;小路
-        </div>
-        <div>
-            Based on the <a target="_blank" rel="noopener" href="https://hexo.io">Hexo Engine</a> &amp;
-            <a target="_blank" rel="noopener" href="https://github.com/theme-particlex/hexo-theme-particlex">ParticleX Theme</a>
-        </div>
-        
+    <h3><a href="/2024/11/27/%E5%A4%9A%E4%B8%AAGSE%E6%95%B0%E6%8D%AE%E9%9B%86%E7%9B%B8%E4%BA%92%E5%8D%B0%E8%AF%81%E7%9A%84%E5%88%86%E6%9E%90%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5%E7%99%8C%E7%97%87%E7%9B%B8%E5%85%B3%E5%9F%BA%E5%9B%A0%E8%A1%A8%E8%BE%BE%E4%B8%BA%E4%BE%8B%EF%BC%89/" itemprop="url" title="多个GSE数据集相互印证的分析教程（以癌症相关基因表达为例）">多个GSE数据集相互印证的分析教程（以癌症相关基因表达为例）</a></h3>
+    <div class="excerpt">
+        多个GSE数据相互印证分析教程（以癌症相关基因表达为例）一、安装必要的R包
+确保已安装BiocManager。如果未安装，在R控制台中输入以下命令进行安装：12if (!requireNamespace(&amp;quot;BiocManager&amp;quot;, quietly = TRUE))...
     </div>
-</footer>
+    <a href="/2024/11/27/%E5%A4%9A%E4%B8%AAGSE%E6%95%B0%E6%8D%AE%E9%9B%86%E7%9B%B8%E4%BA%92%E5%8D%B0%E8%AF%81%E7%9A%84%E5%88%86%E6%9E%90%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5%E7%99%8C%E7%97%87%E7%9B%B8%E5%85%B3%E5%9F%BA%E5%9B%A0%E8%A1%A8%E8%BE%BE%E4%B8%BA%E4%BE%8B%EF%BC%89/" itemprop="url" title="多个GSE数据集相互印证的分析教程（以癌症相关基因表达为例）" class="btn">more...</a>
+  </div>
+</article>
+
+        
+<article class="item">
+  <div class="cover">
+    <a href="/2024/11/27/GSE%E6%95%B0%E6%8D%AE%E4%B8%8B%E8%BD%BD%E3%80%81%E6%B3%A8%E9%87%8A%E3%80%81%E5%B7%AE%E5%BC%82%E5%9F%BA%E5%9B%A0%E5%88%86%E6%9E%90%E3%80%81GO%E5%AF%8C%E9%9B%86%E5%88%86%E6%9E%90%E4%B8%8EGSEA%E5%AF%8C%E9%9B%86%E5%88%86%E6%9E%90%E6%95%99%E7%A8%8B/" itemprop="url" title="GSE数据下载、注释、差异基因分析、GO富集分析与GSEA富集分析教程"><img data-src="https://tva4.sinaimg.cn/mw690/6833939bly1giclh0m9pdj20zk0m8hdt.jpg"></a>
+  </div>
+  <div class="info">
+    
+<div class="meta">
+  <span class="item" title="创建时间：2024-11-27 20:03:20">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <time itemprop="dateCreated datePublished" datetime="2024-11-27T20:03:20+08:00">2024-11-27</time>
+  </span>
+</div>
+
+    <h3><a href="/2024/11/27/GSE%E6%95%B0%E6%8D%AE%E4%B8%8B%E8%BD%BD%E3%80%81%E6%B3%A8%E9%87%8A%E3%80%81%E5%B7%AE%E5%BC%82%E5%9F%BA%E5%9B%A0%E5%88%86%E6%9E%90%E3%80%81GO%E5%AF%8C%E9%9B%86%E5%88%86%E6%9E%90%E4%B8%8EGSEA%E5%AF%8C%E9%9B%86%E5%88%86%E6%9E%90%E6%95%99%E7%A8%8B/" itemprop="url" title="GSE数据下载、注释、差异基因分析、GO富集分析与GSEA富集分析教程">GSE数据下载、注释、差异基因分析、GO富集分析与GSEA富集分析教程</a></h3>
+    <div class="excerpt">
+        GSE数据下载、差异基因分析、GO富集分析与GSEA分析教程一、安装必要的R包
+确保已安装BiocManager。如果未安装，在R控制台中输入以下命令进行安装：12if (!requireNamespace(&amp;quot;BiocManager&amp;quot;, quietly = TRUE))...
+    </div>
+    <a href="/2024/11/27/GSE%E6%95%B0%E6%8D%AE%E4%B8%8B%E8%BD%BD%E3%80%81%E6%B3%A8%E9%87%8A%E3%80%81%E5%B7%AE%E5%BC%82%E5%9F%BA%E5%9B%A0%E5%88%86%E6%9E%90%E3%80%81GO%E5%AF%8C%E9%9B%86%E5%88%86%E6%9E%90%E4%B8%8EGSEA%E5%AF%8C%E9%9B%86%E5%88%86%E6%9E%90%E6%95%99%E7%A8%8B/" itemprop="url" title="GSE数据下载、注释、差异基因分析、GO富集分析与GSEA富集分析教程" class="btn">more...</a>
+  </div>
+</article>
+
+        
+<article class="item">
+  <div class="cover">
+    <a href="/2024/11/27/%E7%94%9F%E4%BF%A1%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B%EF%BC%9AR%E3%80%81Rstudio%E3%80%81Python%E3%80%81VsCode%E5%8F%8A%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/" itemprop="url" title="生信环境搭建教程：R、Rstudio、Python、VsCode及相关配置"><img data-src="https://tva4.sinaimg.cn/mw690/6833939bly1gipeun65urj20zk0m81ii.jpg"></a>
+  </div>
+  <div class="info">
+    
+<div class="meta">
+  <span class="item" title="创建时间：2024-11-27 19:42:55">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <time itemprop="dateCreated datePublished" datetime="2024-11-27T19:42:55+08:00">2024-11-27</time>
+  </span>
+</div>
+
+    <h3><a href="/2024/11/27/%E7%94%9F%E4%BF%A1%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B%EF%BC%9AR%E3%80%81Rstudio%E3%80%81Python%E3%80%81VsCode%E5%8F%8A%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/" itemprop="url" title="生信环境搭建教程：R、Rstudio、Python、VsCode及相关配置">生信环境搭建教程：R、Rstudio、Python、VsCode及相关配置</a></h3>
+    <div class="excerpt">
+        编程环境搭建教程：R、RStudio、Rtools、Mamba、VSCode 及相关配置一、安装 R访问 R 官网（https://www.r-project.org/），在首页找到 “Download” 选项进入下载页面，根据操作系统选择合适版本（如 Windows 系统点击 “Download R for Windows” 后选择 “base” 链接下载基础安装包）。找到下载的安装包（.exe 文件）双击运行，在安装向导中依次选择安装语言（一般为英语）、安装目录（建议默认）、组件（一般默认）、启动选项（默认），最后点击 “Install” 开始安装并等待完成。[此处插入 R...
+    </div>
+    <a href="/2024/11/27/%E7%94%9F%E4%BF%A1%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B%EF%BC%9AR%E3%80%81Rstudio%E3%80%81Python%E3%80%81VsCode%E5%8F%8A%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/" itemprop="url" title="生信环境搭建教程：R、Rstudio、Python、VsCode及相关配置" class="btn">more...</a>
+  </div>
+</article>
+
+    </div>
+
+  </div>
+
+  
+
+
 
         </div>
-        
-        <transition name="fade">
-            <div id="preview" ref="preview" v-show="previewShow">
-                <img id="preview-content" ref="previewContent" />
-            </div>
-        </transition>
-        
+        <div id="sidebar">
+          
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="小路Episteme"
+      data-src="/images/avatar.jpg">
+  <p class="name" itemprop="name">小路Episteme</p>
+  <div class="description" itemprop="description">欢迎关注我，我的公众号是 医嘉SCI，b站和油管频道都是 小路Episteme</div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">5</span>
+        <span class="name">文章</span>
+      </a>
     </div>
-    <script src="/js/main.js"></script>
+</nav>
+
+<div class="social">
+</div>
+
+<ul class="menu">
+  
     
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2024/11/27/%E7%94%9F%E4%BF%A1%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B%EF%BC%9AR%E3%80%81Rstudio%E3%80%81Python%E3%80%81VsCode%E5%8F%8A%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/" title="生信环境搭建教程：R、Rstudio、Python、VsCode及相关配置">生信环境搭建教程：R、Rstudio、Python、VsCode及相关配置</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2024/11/27/GSE%E6%95%B0%E6%8D%AE%E4%B8%8B%E8%BD%BD%E3%80%81%E6%B3%A8%E9%87%8A%E3%80%81%E5%B7%AE%E5%BC%82%E5%9F%BA%E5%9B%A0%E5%88%86%E6%9E%90%E3%80%81GO%E5%AF%8C%E9%9B%86%E5%88%86%E6%9E%90%E4%B8%8EGSEA%E5%AF%8C%E9%9B%86%E5%88%86%E6%9E%90%E6%95%99%E7%A8%8B/" title="GSE数据下载、注释、差异基因分析、GO富集分析与GSEA富集分析教程">GSE数据下载、注释、差异基因分析、GO富集分析与GSEA富集分析教程</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2024/12/08/Grok--%E9%AB%98%E6%95%88%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C%E5%BF%85%E5%A4%87/" title="Grok--高效论文写作必备">Grok--高效论文写作必备</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2024/11/27/%E5%A4%9A%E4%B8%AAGSE%E6%95%B0%E6%8D%AE%E9%9B%86%E7%9B%B8%E4%BA%92%E5%8D%B0%E8%AF%81%E7%9A%84%E5%88%86%E6%9E%90%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5%E7%99%8C%E7%97%87%E7%9B%B8%E5%85%B3%E5%9F%BA%E5%9B%A0%E8%A1%A8%E8%BE%BE%E4%B8%BA%E4%BE%8B%EF%BC%89/" title="多个GSE数据集相互印证的分析教程（以癌症相关基因表达为例）">多个GSE数据集相互印证的分析教程（以癌症相关基因表达为例）</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2024/12/06/%E6%89%B9%E9%87%8F%E5%88%86%E5%AD%90%E5%AF%B9%E6%8E%A5/" title="批量分子对接">批量分子对接</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">小路Episteme @ Yume Shoka</span>
+  </div>
+  <div class="powered-by">
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: '',
+    favicon: {
+      show: "（●´3｀●）やれやれだぜ",
+      hide: "(´Д｀)大変だ！"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,
+    copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
 </body>
 </html>
