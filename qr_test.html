@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/app.css?v=0.2.6">
+<title>赞赏二维码预览</title>
+<style>
+  body { background: #fff; margin: 0; padding: 20px; }
+  .wrap { max-width: 700px; margin: 0 auto; }
+  #qr { display: block !important; }     /* 站点默认 display:none，点「赞赏」才展开 */
+  #qr > div { display: inline-block; width: 32%; vertical-align: top; padding: 0 4px; box-sizing: border-box; }
+  #qr img { width: 100%; height: auto; }
+  h3 { font-family: sans-serif; }
+</style></head>
+<body><div class="wrap">
+<h3>首页/文章页「赞赏」区二维码（点开后展开的样子）</h3>
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+    <div><img src="/images/wechatpay.png" alt="微信支付"><p>微信支付</p></div>
+    <div><img src="/images/alipay.png" alt="支付宝"><p>支付宝</p></div>
+    <div><img src="/images/paypal.png" alt="贝宝"><p>贝宝</p></div>
+  </div>
+</div>
+</div></body></html>
