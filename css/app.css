@@ -6211,3 +6211,14 @@ span.label {
 .audio.playing .cover .disc {
   animation-play-state: running;
 }
+
+
+/* ==== 修复：全屏加载遮罩 #loading 永远不消失，导致页面一片空白 ====
+   #loading 是 position:fixed / z-index:9999 / 背景 #fdfdfd 的全屏遮罩，
+   但 app.css 里没有任何规则把它隐藏。JS 只加了 body.loaded，
+   而 body.loaded 的规则里不含 #loading，所以遮罩一直盖在最上层。
+   下面两条：① 正常情况随 body.loaded 隐藏；② 纯 CSS 兜底，
+   即使 jsdelivr 的 JS 全部加载失败，遮罩也会在 2.5 秒后自动淡出。 */
+body.loaded #loading { display: none !important; }
+#loading { animation: autoHideLoading 0.6s ease 2.5s forwards; }
+@keyframes autoHideLoading { to { opacity: 0; visibility: hidden; } }
