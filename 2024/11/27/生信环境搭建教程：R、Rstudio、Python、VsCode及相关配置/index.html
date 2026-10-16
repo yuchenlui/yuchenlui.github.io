@@ -21,7 +21,7 @@
 
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
-<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+<link rel="stylesheet" href="/css/app.css?v=0.2.6">
 
   
 
@@ -32,6 +32,8 @@
   <title>
 生信环境搭建教程：R、Rstudio、Python、VsCode及相关配置 |
 生信学习第一站 = 小路Episteme = 知识是通向自由的阶梯</title>
+<meta name="description" content="编程环境搭建教程：R、RStudio、Rtools、Mamba、VSCode 及相关配置 一、安装 R 访问 R 官网（ https://www.r-project.org/），在首页找到 “Download” 选项进入下载页面，根据操作系统选择合适版本（如 Windows 系统点击 “Download R for Windows” 后选择 “base” 链">
+<meta name="keywords" content="生信,生物信息学,生信环境搭建教程：R">
 <meta name="generator" content="Hexo 7.3.0"></head>
 <body itemscope itemtype="http://schema.org/WebPage">
   <div id="loading">
@@ -100,12 +102,7 @@
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipewf5l51j20zk0m8b29.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclj9410cj20zk0m8h12.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicitspjpbj20zk0m81ky.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipey84bjtj20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipev1x5e4j20zk0m8b29.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclh3brzpj20zk0m8ann.jpg"></li>
+          <li class="item" data-background-image="/images/banner/hero.jpg"></li>
         </ul>
       </div>
     </header>
@@ -149,7 +146,7 @@
   <div class="body md" itemprop="articleBody">
     
 
-    <p>编程环境搭建教程：R、RStudio、Rtools、Mamba、VSCode 及相关配置<br>一、安装 R<br>访问 R 官网（<a target="_blank" rel="noopener" href="https://www.r-project.org/%EF%BC%89%EF%BC%8C%E5%9C%A8%E9%A6%96%E9%A1%B5%E6%89%BE%E5%88%B0">https://www.r-project.org/），在首页找到</a> “Download” 选项进入下载页面，根据操作系统选择合适版本（如 Windows 系统点击 “Download R for Windows” 后选择 “base” 链接下载基础安装包）。<br>找到下载的安装包（.exe 文件）双击运行，在安装向导中依次选择安装语言（一般为英语）、安装目录（建议默认）、组件（一般默认）、启动选项（默认），最后点击 “Install” 开始安装并等待完成。<br>[此处插入 R 官网首页、下载页面、安装向导部分页面截图，分别标注为图 1、图 2、图 3]<br>二、安装 RStudio<br>前往 RStudio 官网（<a target="_blank" rel="noopener" href="https://posit.co/%EF%BC%89%EF%BC%8C%E7%82%B9%E5%87%BB%E9%A6%96%E9%A1%B5">https://posit.co/），点击首页</a> “Download” 按钮进入下载页面，依据操作系统选择相应版本（Windows 系统选择 “RStudio Desktop” 的 Windows 版本）。<br>运行下载的 RStudio 安装包（.exe 文件），在安装向导中点击 “Next”，选择安装目录（可默认），按需选择创建桌面快捷方式等选项后继续点击 “Next”，最后点击 “Install” 等待安装结束。<br>[此处插入 RStudio 官网首页、下载页面、安装向导部分页面截图，分别标注为图 4、图 5、图 6]<br>三、安装 Rtools（仅 Windows 系统适用）<br>打开 Rtools 官网（<a target="_blank" rel="noopener" href="https://cran.r-project.org/bin/windows/Rtools/%EF%BC%89%EF%BC%8C%E6%A0%B9%E6%8D%AE">https://cran.r-project.org/bin/windows/Rtools/），根据</a> R 版本选择合适的 Rtools 版本并下载。<br>双击运行下载的 Rtools 安装包（.exe 文件），在安装向导中点击 “Next”，选择安装目录（建议默认）、组件（默认），安装过程中选择 “Add Rtools to the system PATH for the current user” 添加系统环境变量，点击 “OK” 后继续点击 “Install” 等待安装完成。<br>[此处插入 Rtools 官网页面、下载链接位置、安装向导部分页面截图，分别标注为图 7、图 8、图 9]<br>四、安装 Mamba<br>在浏览器访问 Mambaforge 下载页面（<a target="_blank" rel="noopener" href="https://github.com/conda-forge/miniforge#mambaforge%EF%BC%89%EF%BC%8C%E6%A0%B9%E6%8D%AE%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%80%89%E6%8B%A9%E5%90%88%E9%80%82%E7%89%88%E6%9C%AC%EF%BC%88%E5%A6%82">https://github.com/conda-forge/miniforge#mambaforge），根据操作系统选择合适版本（如</a> Windows 64 位系统选择 “Mambaforge-Windows-x86_64.exe”）下载。<br>运行下载的安装包，在安装向导中点击 “Next”，选择安装目录（注意路径不含中文），选择 “Add Mamba to my PATH environment variable” 添加到系统路径，点击 “Next” 后点击 “Install” 等待安装完成。<br>[此处插入 Mambaforge 下载页面、安装向导部分页面截图，分别标注为图 10、图 11]<br>五、安装 VSCode<br>进入 VSCode 官网（<a target="_blank" rel="noopener" href="https://code.visualstudio.com/%EF%BC%89%EF%BC%8C%E7%82%B9%E5%87%BB%E9%A6%96%E9%A1%B5">https://code.visualstudio.com/），点击首页</a> “Download” 按钮进入下载页面，选择对应操作系统版本（Windows 系统点击 “Windows” 下载按钮）。<br>找到下载的 VSCode 安装包（.exe 文件）双击运行，在安装向导中点击 “Next”，选择安装目录（可默认），按需选择创建桌面快捷方式等选项后点击 “Next”，最后点击 “Install” 等待安装完成。<br>[此处插入 VSCode 官网首页、下载页面、安装向导部分页面截图，分别标注为图 12、图 13、图 14]<br>六、在 VSCode 中配置 R<br>打开 VSCode，点击左侧 “Extensions” 图标打开扩展面板，搜索 “R” 并安装 “R for Visual Studio Code” 扩展插件，安装完成后可能需重启 VSCode。<br>打开 VSCode 设置（点击左下角齿轮图标选择 “Settings”），搜索 “r.path”，若 R 安装路径未自动检测到，点击 “Edit in settings.json” 添加或修改 “r.rpath” 为 R 安装目录（如：”r.rpath”: “C:\Program Files\R\R-4.2.2\bin\R.exe”，注意反斜杠转义），保存后 VSCode 即可找到 R 执行路径。<br>[此处插入扩展面板搜索 R 插件、设置 R 路径相关截图，分别标注为图 15、图 17]<br>七、在 VSCode 中配置 Python（使用 Mamba 管理的环境）<br>打开命令提示符（Windows 系统搜索 “cmd” 打开），输入 “mamba create -n myenv python&#x3D;3.9”（创建名为 “myenv” 的 Python 3.9 环境，可按需更改）创建 Python 虚拟环境，等待 Mamba 下载安装完成。<br>打开 VSCode，点击左下角 Python 版本号（若未显示可在命令面板输入 “Python: Select Interpreter” 打开菜单），选择 “Enter interpreter path…”，找到创建的虚拟环境中的 Python 解释器路径（如：“C:\Users\YourUsername\mambaforge\envs\myenv\python.exe”）点击 “OK”，VSCode 将使用该解释器运行 Python 代码。<br>[此处插入创建虚拟环境命令执行过程、选择 Python 解释器相关截图，分别标注为图 18、图 19、图 20]<br>完成上述步骤后，即可使用这些工具进行编程与数据分析工作。</p>
+    <p>编程环境搭建教程：R、RStudio、Rtools、Mamba、VSCode 及相关配置<br>一、安装 R<br>访问 R 官网（<a target="_blank" rel="noopener" href="https://www.r-project.org/">https://www.r-project.org/</a>），在首页找到 “Download” 选项进入下载页面，根据操作系统选择合适版本（如 Windows 系统点击 “Download R for Windows” 后选择 “base” 链接下载基础安装包）。<br>找到下载的安装包（.exe 文件）双击运行，在安装向导中依次选择安装语言（一般为英语）、安装目录（建议默认）、组件（一般默认）、启动选项（默认），最后点击 “Install” 开始安装并等待完成。<br>[此处插入 R 官网首页、下载页面、安装向导部分页面截图，分别标注为图 1、图 2、图 3]<br>二、安装 RStudio<br>前往 RStudio 官网（<a target="_blank" rel="noopener" href="https://posit.co/">https://posit.co/</a>），点击首页 “Download” 按钮进入下载页面，依据操作系统选择相应版本（Windows 系统选择 “RStudio Desktop” 的 Windows 版本）。<br>运行下载的 RStudio 安装包（.exe 文件），在安装向导中点击 “Next”，选择安装目录（可默认），按需选择创建桌面快捷方式等选项后继续点击 “Next”，最后点击 “Install” 等待安装结束。<br>[此处插入 RStudio 官网首页、下载页面、安装向导部分页面截图，分别标注为图 4、图 5、图 6]<br>三、安装 Rtools（仅 Windows 系统适用）<br>打开 Rtools 官网（<a target="_blank" rel="noopener" href="https://cran.r-project.org/bin/windows/Rtools/">https://cran.r-project.org/bin/windows/Rtools/</a>），根据 R 版本选择合适的 Rtools 版本并下载。<br>双击运行下载的 Rtools 安装包（.exe 文件），在安装向导中点击 “Next”，选择安装目录（建议默认）、组件（默认），安装过程中选择 “Add Rtools to the system PATH for the current user” 添加系统环境变量，点击 “OK” 后继续点击 “Install” 等待安装完成。<br>[此处插入 Rtools 官网页面、下载链接位置、安装向导部分页面截图，分别标注为图 7、图 8、图 9]<br>四、安装 Mamba<br>在浏览器访问 Mambaforge 下载页面（<a target="_blank" rel="noopener" href="https://github.com/conda-forge/miniforge#mambaforge">https://github.com/conda-forge/miniforge#mambaforge</a>），根据操作系统选择合适版本（如 Windows 64 位系统选择 “Mambaforge-Windows-x86_64.exe”）下载。<br>运行下载的安装包，在安装向导中点击 “Next”，选择安装目录（注意路径不含中文），选择 “Add Mamba to my PATH environment variable” 添加到系统路径，点击 “Next” 后点击 “Install” 等待安装完成。<br>[此处插入 Mambaforge 下载页面、安装向导部分页面截图，分别标注为图 10、图 11]<br>五、安装 VSCode<br>进入 VSCode 官网（<a target="_blank" rel="noopener" href="https://code.visualstudio.com/">https://code.visualstudio.com/</a>），点击首页 “Download” 按钮进入下载页面，选择对应操作系统版本（Windows 系统点击 “Windows” 下载按钮）。<br>找到下载的 VSCode 安装包（.exe 文件）双击运行，在安装向导中点击 “Next”，选择安装目录（可默认），按需选择创建桌面快捷方式等选项后点击 “Next”，最后点击 “Install” 等待安装完成。<br>[此处插入 VSCode 官网首页、下载页面、安装向导部分页面截图，分别标注为图 12、图 13、图 14]<br>六、在 VSCode 中配置 R<br>打开 VSCode，点击左侧 “Extensions” 图标打开扩展面板，搜索 “R” 并安装 “R for Visual Studio Code” 扩展插件，安装完成后可能需重启 VSCode。<br>打开 VSCode 设置（点击左下角齿轮图标选择 “Settings”），搜索 “r.path”，若 R 安装路径未自动检测到，点击 “Edit in settings.json” 添加或修改 “r.rpath” 为 R 安装目录（如：”r.rpath”: “C:\Program Files\R\R-4.2.2\bin\R.exe”，注意反斜杠转义），保存后 VSCode 即可找到 R 执行路径。<br>[此处插入扩展面板搜索 R 插件、设置 R 路径相关截图，分别标注为图 15、图 17]<br>七、在 VSCode 中配置 Python（使用 Mamba 管理的环境）<br>打开命令提示符（Windows 系统搜索 “cmd” 打开），输入 “mamba create -n myenv python&#x3D;3.9”（创建名为 “myenv” 的 Python 3.9 环境，可按需更改）创建 Python 虚拟环境，等待 Mamba 下载安装完成。<br>打开 VSCode，点击左下角 Python 版本号（若未显示可在命令面板输入 “Python: Select Interpreter” 打开菜单），选择 “Enter interpreter path…”，找到创建的虚拟环境中的 Python 解释器路径（如：“C:\Users\YourUsername\mambaforge\envs\myenv\python.exe”）点击 “OK”，VSCode 将使用该解释器运行 Python 代码。<br>[此处插入创建虚拟环境命令执行过程、选择 Python 解释器相关截图，分别标注为图 18、图 19、图 20]<br>完成上述步骤后，即可使用这些工具进行编程与数据分析工作。</p>
 
   </div>
 
@@ -213,7 +210,7 @@
     <div class="item right">
       
 
-  <a href="/2024/11/27/GSE%E6%95%B0%E6%8D%AE%E4%B8%8B%E8%BD%BD%E3%80%81%E6%B3%A8%E9%87%8A%E3%80%81%E5%B7%AE%E5%BC%82%E5%9F%BA%E5%9B%A0%E5%88%86%E6%9E%90%E3%80%81GO%E5%AF%8C%E9%9B%86%E5%88%86%E6%9E%90%E4%B8%8EGSEA%E5%AF%8C%E9%9B%86%E5%88%86%E6%9E%90%E6%95%99%E7%A8%8B/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipew28b65j20zk0m8hdt.jpg" title="GSE数据下载、注释、差异基因分析、GO富集分析与GSEA富集分析教程">
+  <a href="/2024/11/27/GSE%E6%95%B0%E6%8D%AE%E4%B8%8B%E8%BD%BD%E3%80%81%E6%B3%A8%E9%87%8A%E3%80%81%E5%B7%AE%E5%BC%82%E5%9F%BA%E5%9B%A0%E5%88%86%E6%9E%90%E3%80%81GO%E5%AF%8C%E9%9B%86%E5%88%86%E6%9E%90%E4%B8%8EGSEA%E5%AF%8C%E9%9B%86%E5%88%86%E6%9E%90%E6%95%99%E7%A8%8B/" itemprop="url" rel="next" data-background-image="/images/covers/gse.jpg" title="GSE数据下载、注释、差异基因分析、GO富集分析与GSEA富集分析教程">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>GSE数据下载、注释、差异基因分析、GO富集分析与GSEA富集分析教程</h3>
@@ -391,11 +388,10 @@
   };
 </script>
 
-<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
-
 <script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
 
 <script src="/js/app.js?v=0.2.5"></script>
+<script src="/js/fallback.js"></script>
 
 
 

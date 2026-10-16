@@ -21,7 +21,7 @@
 
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
-<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+<link rel="stylesheet" href="/css/app.css?v=0.2.6">
 
   
 
@@ -32,6 +32,8 @@
   <title>
 批量分子对接 |
 生信学习第一站 = 小路Episteme = 知识是通向自由的阶梯</title>
+<meta name="description" content="基础知识：比如为何需要pdbqt格式 分子对接基础知识 - xiaojikuaipao - 博客园 (cnblogs.com) 安装的指导文件看下面这些 vina的指导文档，必看（提供了好几种安装方式，一种不行换一种，其实操作非常详细了，很多都不一定需要手动调整，直接Linux里面用就行） Installation — Autodock Vina 1.2.0">
+<meta name="keywords" content="生信,生物信息学,批量分子对接">
 <meta name="generator" content="Hexo 7.3.0"></head>
 <body itemscope itemtype="http://schema.org/WebPage">
   <div id="loading">
@@ -100,12 +102,7 @@
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclimtf7dj20zk0m8qav.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclxp31goj20zk0m8qv5.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclip4jbpj20zk0m87cv.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipetlbztpj20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicm0fdw5cj20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclfdu6exj20zk0m87hw.jpg"></li>
+          <li class="item" data-background-image="/images/banner/hero.jpg"></li>
         </ul>
       </div>
     </header>
@@ -185,7 +182,7 @@
 <p>bash $MGL_ROOT&#x2F;install.sh</p>
 <p>!后面会出现install.sh后面会出现几个alias，要将其放入.bashrc，还要source一下</p>
 <p>这个软件因为是python2写的，所以注意需要用到python2的环境,所以按照上面的教程设置2也行，或者直接创建conda的python2的环境</p>
-<p> conda create -n vina3 python&#x3D;2.7<br>三， zinc小分子数据库的下载<br>如何从ZINC数库（<a target="_blank" rel="noopener" href="http://www.zinc15.docking.org)下载虚拟筛选化合物库/">www.zinc15.docking.org）下载虚拟筛选化合物库</a> - 知乎 (zhihu.com)</p>
+<p> conda create -n vina3 python&#x3D;2.7<br>三， zinc小分子数据库的下载<br>如何从ZINC数库（<a target="_blank" rel="noopener" href="https://zinc.docking.org/">www.zinc15.docking.org</a>）下载虚拟筛选化合物库 - 知乎 (zhihu.com)</p>
 <p>按照第一个视频上面的操作就好，我们下载的是mol2格式，通过fda认证的小分子药物<br>ZINC (docking.org)</p>
 <p>四.基础操作<br>4.1 obabel解压缩<br>首先我们下载的是一个fda.mol2文件，这是个大的压缩文件,要使用obabel 进行解压缩成若干个小的mol2文件</p>
 <p>obabel -i mol2 fda.mol2 -o mol2 -O fda.mol2 -m<br>注：其实看上面就知道其实不需要prepare这个obabel 也可以将mol2转换为pdbqt</p>
@@ -272,7 +269,7 @@
     <div class="item left">
       
 
-  <a href="/2024/11/27/%E5%A4%9A%E4%B8%AAGSE%E6%95%B0%E6%8D%AE%E9%9B%86%E7%9B%B8%E4%BA%92%E5%8D%B0%E8%AF%81%E7%9A%84%E5%88%86%E6%9E%90%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5%E7%99%8C%E7%97%87%E7%9B%B8%E5%85%B3%E5%9F%BA%E5%9B%A0%E8%A1%A8%E8%BE%BE%E4%B8%BA%E4%BE%8B%EF%BC%89/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipetfk5zwj20zk0m8e81.jpg" title="多个GSE数据集相互印证的分析教程（以癌症相关基因表达为例）">
+  <a href="/2024/11/27/%E5%A4%9A%E4%B8%AAGSE%E6%95%B0%E6%8D%AE%E9%9B%86%E7%9B%B8%E4%BA%92%E5%8D%B0%E8%AF%81%E7%9A%84%E5%88%86%E6%9E%90%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5%E7%99%8C%E7%97%87%E7%9B%B8%E5%85%B3%E5%9F%BA%E5%9B%A0%E8%A1%A8%E8%BE%BE%E4%B8%BA%E4%BE%8B%EF%BC%89/" itemprop="url" rel="prev" data-background-image="/images/covers/multi-gse.jpg" title="多个GSE数据集相互印证的分析教程（以癌症相关基因表达为例）">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>多个GSE数据集相互印证的分析教程（以癌症相关基因表达为例）</h3>
@@ -282,7 +279,7 @@
     <div class="item right">
       
 
-  <a href="/2024/12/08/Grok--%E9%AB%98%E6%95%88%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C%E5%BF%85%E5%A4%87/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeyhsblkj20zk0m81kx.jpg" title="Grok--高效论文写作必备">
+  <a href="/2024/12/08/Grok--%E9%AB%98%E6%95%88%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C%E5%BF%85%E5%A4%87/" itemprop="url" rel="next" data-background-image="/images/covers/grok.jpg" title="Grok--高效论文写作必备">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>Grok--高效论文写作必备</h3>
@@ -463,11 +460,10 @@
   };
 </script>
 
-<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
-
 <script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
 
 <script src="/js/app.js?v=0.2.5"></script>
+<script src="/js/fallback.js"></script>
 
 
 

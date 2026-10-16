@@ -21,7 +21,7 @@
 
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
-<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+<link rel="stylesheet" href="/css/app.css?v=0.2.6">
 
   
 
@@ -32,6 +32,8 @@
   <title>
 多个GSE数据集相互印证的分析教程（以癌症相关基因表达为例） |
 生信学习第一站 = 小路Episteme = 知识是通向自由的阶梯</title>
+<meta name="description" content="多个GSE数据相互印证分析教程（以癌症相关基因表达为例） 一、安装必要的R包 确保已安装 BiocManager 。如果未安装，在R控制台中输入以下命令进行安装： 1 2 if (!requireNamespace(&quot;BiocManager&quot;, quietly = TRUE)) install.packages(&quot;BiocManager&quot;) 安装所需的包，包">
+<meta name="keywords" content="生信,生物信息学,多个GSE数据集相互印证的分析教程">
 <meta name="generator" content="Hexo 7.3.0"></head>
 <body itemscope itemtype="http://schema.org/WebPage">
   <div id="loading">
@@ -100,12 +102,7 @@
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giciukx8a7j20zk0m8aio.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclj9410cj20zk0m8h12.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipev1x5e4j20zk0m8b29.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipexe4oykj20zk0m87ji.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipexoj0moj20zk0m8kgu.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipevarprfj20zk0m8npd.jpg"></li>
+          <li class="item" data-background-image="/images/banner/hero.jpg"></li>
         </ul>
       </div>
     </header>
@@ -238,7 +235,7 @@
     <div class="item left">
       
 
-  <a href="/2024/11/27/GSE%E6%95%B0%E6%8D%AE%E4%B8%8B%E8%BD%BD%E3%80%81%E6%B3%A8%E9%87%8A%E3%80%81%E5%B7%AE%E5%BC%82%E5%9F%BA%E5%9B%A0%E5%88%86%E6%9E%90%E3%80%81GO%E5%AF%8C%E9%9B%86%E5%88%86%E6%9E%90%E4%B8%8EGSEA%E5%AF%8C%E9%9B%86%E5%88%86%E6%9E%90%E6%95%99%E7%A8%8B/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeu1usa7j20zk0m8b29.jpg" title="GSE数据下载、注释、差异基因分析、GO富集分析与GSEA富集分析教程">
+  <a href="/2024/11/27/GSE%E6%95%B0%E6%8D%AE%E4%B8%8B%E8%BD%BD%E3%80%81%E6%B3%A8%E9%87%8A%E3%80%81%E5%B7%AE%E5%BC%82%E5%9F%BA%E5%9B%A0%E5%88%86%E6%9E%90%E3%80%81GO%E5%AF%8C%E9%9B%86%E5%88%86%E6%9E%90%E4%B8%8EGSEA%E5%AF%8C%E9%9B%86%E5%88%86%E6%9E%90%E6%95%99%E7%A8%8B/" itemprop="url" rel="prev" data-background-image="/images/covers/gse.jpg" title="GSE数据下载、注释、差异基因分析、GO富集分析与GSEA富集分析教程">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>GSE数据下载、注释、差异基因分析、GO富集分析与GSEA富集分析教程</h3>
@@ -248,7 +245,7 @@
     <div class="item right">
       
 
-  <a href="/2024/12/06/%E6%89%B9%E9%87%8F%E5%88%86%E5%AD%90%E5%AF%B9%E6%8E%A5/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeu7txpzj20zk0m81kx.jpg" title="批量分子对接">
+  <a href="/2024/12/06/%E6%89%B9%E9%87%8F%E5%88%86%E5%AD%90%E5%AF%B9%E6%8E%A5/" itemprop="url" rel="next" data-background-image="/images/covers/docking.jpg" title="批量分子对接">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>批量分子对接</h3>
@@ -429,11 +426,10 @@
   };
 </script>
 
-<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
-
 <script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
 
 <script src="/js/app.js?v=0.2.5"></script>
+<script src="/js/fallback.js"></script>
 
 
 

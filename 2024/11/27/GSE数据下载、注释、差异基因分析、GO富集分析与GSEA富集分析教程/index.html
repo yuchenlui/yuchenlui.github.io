@@ -21,7 +21,7 @@
 
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
-<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+<link rel="stylesheet" href="/css/app.css?v=0.2.6">
 
   
 
@@ -32,6 +32,8 @@
   <title>
 GSE数据下载、注释、差异基因分析、GO富集分析与GSEA富集分析教程 |
 生信学习第一站 = 小路Episteme = 知识是通向自由的阶梯</title>
+<meta name="description" content="GSE数据下载、差异基因分析、GO富集分析与GSEA分析教程 一、安装必要的R包 确保已安装 BiocManager 。如果未安装，在R控制台中输入以下命令进行安装： 1 2 if (!requireNamespace(&quot;BiocManager&quot;, quietly = TRUE)) install.packages(&quot;BiocManager&quot;) 安装 geo">
+<meta name="keywords" content="生信,生物信息学,GSE数据下载">
 <meta name="generator" content="Hexo 7.3.0"></head>
 <body itemscope itemtype="http://schema.org/WebPage">
   <div id="loading">
@@ -100,12 +102,7 @@ GSE数据下载、注释、差异基因分析、GO富集分析与GSEA富集分�
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclh5u05ej20zk0m87df.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicm0n457cj20zk0m8e81.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeun65urj20zk0m81ii.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclflwv2aj20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipexw3o58j20zk0m8e81.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giciuv0socj20zk0m8qes.jpg"></li>
+          <li class="item" data-background-image="/images/banner/hero.jpg"></li>
         </ul>
       </div>
     </header>
@@ -152,7 +149,7 @@ GSE数据下载、注释、差异基因分析、GO富集分析与GSEA富集分�
     <h1 id="GSE数据下载、差异基因分析、GO富集分析与GSEA分析教程"><a href="#GSE数据下载、差异基因分析、GO富集分析与GSEA分析教程" class="headerlink" title="GSE数据下载、差异基因分析、GO富集分析与GSEA分析教程"></a>GSE数据下载、差异基因分析、GO富集分析与GSEA分析教程</h1><h2 id="一、安装必要的R包"><a href="#一、安装必要的R包" class="headerlink" title="一、安装必要的R包"></a>一、安装必要的R包</h2><ol>
 <li>确保已安装<code>BiocManager</code>。如果未安装，在R控制台中输入以下命令进行安装：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">if (!requireNamespace(&quot;BiocManager&quot;, quietly = TRUE))</span><br><span class="line">    install.packages(&quot;BiocManager&quot;)</span><br></pre></td></tr></table></figure></li>
 <li>安装<code>geoquery</code>包以及其他用于数据分析的包（如<code>limma</code>用于差异基因分析，<code>clusterProfiler</code>用于GO富集分析和GSEA分析等）：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">BiocManager::install(c(&quot;geoquery&quot;, &quot;limma&quot;, &quot;clusterProfiler&quot;, &quot;org.Hs.eg.db&quot;))</span><br></pre></td></tr></table></figure>
-<img src="/image.png" alt="alt text"></li>
+</li>
 </ol>
 <h2 id="二、使用geoquery下载GSE数据"><a href="#二、使用geoquery下载GSE数据" class="headerlink" title="二、使用geoquery下载GSE数据"></a>二、使用<code>geoquery</code>下载GSE数据</h2><ol>
 <li>加载<code>geoquery</code>包：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">library(geoquery)</span><br></pre></td></tr></table></figure></li>
@@ -241,7 +238,7 @@ GSE数据下载、注释、差异基因分析、GO富集分析与GSEA富集分�
     <div class="item left">
       
 
-  <a href="/2024/11/27/%E7%94%9F%E4%BF%A1%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B%EF%BC%9AR%E3%80%81Rstudio%E3%80%81Python%E3%80%81VsCode%E5%8F%8A%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicis3attqj20zk0m8k7l.jpg" title="生信环境搭建教程：R、Rstudio、Python、VsCode及相关配置">
+  <a href="/2024/11/27/%E7%94%9F%E4%BF%A1%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B%EF%BC%9AR%E3%80%81Rstudio%E3%80%81Python%E3%80%81VsCode%E5%8F%8A%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/" itemprop="url" rel="prev" data-background-image="/images/covers/envsetup.jpg" title="生信环境搭建教程：R、Rstudio、Python、VsCode及相关配置">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>生信环境搭建教程：R、Rstudio、Python、VsCode及相关配置</h3>
@@ -251,7 +248,7 @@ GSE数据下载、注释、差异基因分析、GO富集分析与GSEA富集分�
     <div class="item right">
       
 
-  <a href="/2024/11/27/%E5%A4%9A%E4%B8%AAGSE%E6%95%B0%E6%8D%AE%E9%9B%86%E7%9B%B8%E4%BA%92%E5%8D%B0%E8%AF%81%E7%9A%84%E5%88%86%E6%9E%90%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5%E7%99%8C%E7%97%87%E7%9B%B8%E5%85%B3%E5%9F%BA%E5%9B%A0%E8%A1%A8%E8%BE%BE%E4%B8%BA%E4%BE%8B%EF%BC%89/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giciukx8a7j20zk0m8aio.jpg" title="多个GSE数据集相互印证的分析教程（以癌症相关基因表达为例）">
+  <a href="/2024/11/27/%E5%A4%9A%E4%B8%AAGSE%E6%95%B0%E6%8D%AE%E9%9B%86%E7%9B%B8%E4%BA%92%E5%8D%B0%E8%AF%81%E7%9A%84%E5%88%86%E6%9E%90%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5%E7%99%8C%E7%97%87%E7%9B%B8%E5%85%B3%E5%9F%BA%E5%9B%A0%E8%A1%A8%E8%BE%BE%E4%B8%BA%E4%BE%8B%EF%BC%89/" itemprop="url" rel="next" data-background-image="/images/covers/multi-gse.jpg" title="多个GSE数据集相互印证的分析教程（以癌症相关基因表达为例）">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>多个GSE数据集相互印证的分析教程（以癌症相关基因表达为例）</h3>
@@ -432,11 +429,10 @@ GSE数据下载、注释、差异基因分析、GO富集分析与GSEA富集分�
   };
 </script>
 
-<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
-
 <script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
 
 <script src="/js/app.js?v=0.2.5"></script>
+<script src="/js/fallback.js"></script>
 
 
 
