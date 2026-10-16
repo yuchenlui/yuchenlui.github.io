@@ -1,0 +1,50 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "小路Episteme",
+  "home_page_url": "https://yuchenlui.github.io/",
+  "feed_url": "https://yuchenlui.github.io/feed.json",
+  "description": "生信学习第一站 = 小路Episteme = 知识是通向自由的阶梯",
+  "language": "zh-CN",
+  "authors": [
+    {
+      "name": "小路Episteme"
+    }
+  ],
+  "items": [
+    {
+      "id": "https://yuchenlui.github.io/2024/12/08/Grok--%E9%AB%98%E6%95%88%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C%E5%BF%85%E5%A4%87/",
+      "url": "https://yuchenlui.github.io/2024/12/08/Grok--%E9%AB%98%E6%95%88%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C%E5%BF%85%E5%A4%87/",
+      "title": "Grok--高效论文写作必备",
+      "summary": "1、注册登录 官方地址 https://x.ai/ 2、创建API密钥 地址 https://console.x.ai/ 3、打开chatBox的github页面 https://github.com/Bin-Huang/chatbox 4、下载并安装chatBox 5、打开chatBox 6、打开设置 模型->模型提供方->自定义提供模型 配置： 模型提供",
+      "date_published": "2024-12-08T00:00:00+08:00"
+    },
+    {
+      "id": "https://yuchenlui.github.io/2024/12/06/%E6%89%B9%E9%87%8F%E5%88%86%E5%AD%90%E5%AF%B9%E6%8E%A5/",
+      "url": "https://yuchenlui.github.io/2024/12/06/%E6%89%B9%E9%87%8F%E5%88%86%E5%AD%90%E5%AF%B9%E6%8E%A5/",
+      "title": "批量分子对接",
+      "summary": "基础知识：比如为何需要pdbqt格式 分子对接基础知识 - xiaojikuaipao - 博客园 (cnblogs.com) 安装的指导文件看下面这些 vina的指导文档，必看（提供了好几种安装方式，一种不行换一种，其实操作非常详细了，很多都不一定需要手动调整，直接Linux里面用就行） Installation — Autodock Vina 1.2.0",
+      "date_published": "2024-12-06T00:00:00+08:00"
+    },
+    {
+      "id": "https://yuchenlui.github.io/2024/11/27/GSE%E6%95%B0%E6%8D%AE%E4%B8%8B%E8%BD%BD%E3%80%81%E6%B3%A8%E9%87%8A%E3%80%81%E5%B7%AE%E5%BC%82%E5%9F%BA%E5%9B%A0%E5%88%86%E6%9E%90%E3%80%81GO%E5%AF%8C%E9%9B%86%E5%88%86%E6%9E%90%E4%B8%8EGSEA%E5%AF%8C%E9%9B%86%E5%88%86%E6%9E%90%E6%95%99%E7%A8%8B/",
+      "url": "https://yuchenlui.github.io/2024/11/27/GSE%E6%95%B0%E6%8D%AE%E4%B8%8B%E8%BD%BD%E3%80%81%E6%B3%A8%E9%87%8A%E3%80%81%E5%B7%AE%E5%BC%82%E5%9F%BA%E5%9B%A0%E5%88%86%E6%9E%90%E3%80%81GO%E5%AF%8C%E9%9B%86%E5%88%86%E6%9E%90%E4%B8%8EGSEA%E5%AF%8C%E9%9B%86%E5%88%86%E6%9E%90%E6%95%99%E7%A8%8B/",
+      "title": "GSE数据下载、注释、差异基因分析、GO富集分析与GSEA富集分析教程",
+      "summary": "GSE数据下载、差异基因分析、GO富集分析与GSEA分析教程 一、安装必要的R包 确保已安装 BiocManager 。如果未安装，在R控制台中输入以下命令进行安装： 1 2 if (!requireNamespace(\"BiocManager\", quietly = TRUE)) install.packages(\"BiocManager\") 安装 geo",
+      "date_published": "2024-11-27T00:00:00+08:00"
+    },
+    {
+      "id": "https://yuchenlui.github.io/2024/11/27/%E5%A4%9A%E4%B8%AAGSE%E6%95%B0%E6%8D%AE%E9%9B%86%E7%9B%B8%E4%BA%92%E5%8D%B0%E8%AF%81%E7%9A%84%E5%88%86%E6%9E%90%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5%E7%99%8C%E7%97%87%E7%9B%B8%E5%85%B3%E5%9F%BA%E5%9B%A0%E8%A1%A8%E8%BE%BE%E4%B8%BA%E4%BE%8B%EF%BC%89/",
+      "url": "https://yuchenlui.github.io/2024/11/27/%E5%A4%9A%E4%B8%AAGSE%E6%95%B0%E6%8D%AE%E9%9B%86%E7%9B%B8%E4%BA%92%E5%8D%B0%E8%AF%81%E7%9A%84%E5%88%86%E6%9E%90%E6%95%99%E7%A8%8B%EF%BC%88%E4%BB%A5%E7%99%8C%E7%97%87%E7%9B%B8%E5%85%B3%E5%9F%BA%E5%9B%A0%E8%A1%A8%E8%BE%BE%E4%B8%BA%E4%BE%8B%EF%BC%89/",
+      "title": "多个GSE数据集相互印证的分析教程（以癌症相关基因表达为例）",
+      "summary": "多个GSE数据相互印证分析教程（以癌症相关基因表达为例） 一、安装必要的R包 确保已安装 BiocManager 。如果未安装，在R控制台中输入以下命令进行安装： 1 2 if (!requireNamespace(\"BiocManager\", quietly = TRUE)) install.packages(\"BiocManager\") 安装所需的包，包",
+      "date_published": "2024-11-27T00:00:00+08:00"
+    },
+    {
+      "id": "https://yuchenlui.github.io/2024/11/27/%E7%94%9F%E4%BF%A1%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B%EF%BC%9AR%E3%80%81Rstudio%E3%80%81Python%E3%80%81VsCode%E5%8F%8A%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/",
+      "url": "https://yuchenlui.github.io/2024/11/27/%E7%94%9F%E4%BF%A1%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B%EF%BC%9AR%E3%80%81Rstudio%E3%80%81Python%E3%80%81VsCode%E5%8F%8A%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/",
+      "title": "生信环境搭建教程：R、Rstudio、Python、VsCode及相关配置",
+      "summary": "编程环境搭建教程：R、RStudio、Rtools、Mamba、VSCode 及相关配置 一、安装 R 访问 R 官网（ https://www.r-project.org/），在首页找到 “Download” 选项进入下载页面，根据操作系统选择合适版本（如 Windows 系统点击 “Download R for Windows” 后选择 “base” 链",
+      "date_published": "2024-11-27T00:00:00+08:00"
+    }
+  ]
+}
